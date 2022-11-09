@@ -11,7 +11,7 @@
 				"convertedBy": [
 					"dsspeanutbutter#1527"
 				],
-				"version": "1.0.0",
+				"version": "1.1.0",
 				"url": "https://www.gmbinder.com/share/-MZu4xfdbggkPu4vjp-l",
 				"targetSchema": "1.0.0",
 				"color": "2be0a7"
@@ -168,7 +168,7 @@
 			"casterProgression": "full",
 			"startingProficiencies": {
 				"weapons": [
-					"{@item dattger|phb|daggers}",
+					"{@item dagger|phb|daggers}",
 					"{@item dart|phb|darts}",
 					"{@item sling|phb|slings}",
 					"{@item quarterstaff|phb|quarterstaffs}",
@@ -224,7 +224,7 @@
 				"Natural Armor|Lich|CreatureCohortsTheLich|1",
 				"Forbidden Lore|Lich|CreatureCohortsTheLich|2",
 				{
-					"classFeature": "Ascension Rite|Lich|CreatureCohortsTheLich|2",
+					"classFeature": "Ascension Rite Feature|Lich|CreatureCohortsTheLich|2",
 					"gainSubclassFeature": true
 				},
 				"Arcane Obscura|Lich|CreatureCohortsTheLich|3",
@@ -326,8 +326,8 @@
 				},
 				{
 					"colLabels": [
-						"{@filter Cantrips Known|spells|level=0|class=wizard}",
-						"{@filter Spells Known|spells|class=wizard}"
+						"{@filter Cantrips Known|spells|level=0|class=Lich (CC:L)}",
+						"{@filter Spells Known|spells|class=Lich (CC:L)}"
 					],
 					"rows": [
 						[
@@ -415,15 +415,15 @@
 				{
 					"title": "Spell Slots per Spell Level",
 					"colLabels": [
-						"{@filter 1st|spells|level=1|class=wizard}",
-						"{@filter 2nd|spells|level=2|class=wizard}",
-						"{@filter 3rd|spells|level=3|class=wizard}",
-						"{@filter 4th|spells|level=4|class=wizard}",
-						"{@filter 5th|spells|level=5|class=wizard}",
-						"{@filter 6th|spells|level=6|class=wizard}",
-						"{@filter 7th|spells|level=7|class=wizard}",
-						"{@filter 8th|spells|level=8|class=wizard}",
-						"{@filter 9th|spells|level=9|class=wizard}"
+						"{@filter 1st|spells|level=1|class=Lich (CC:L)}",
+						"{@filter 2nd|spells|level=2|class=Lich (CC:L)}",
+						"{@filter 3rd|spells|level=3|class=Lich (CC:L)}",
+						"{@filter 4th|spells|level=4|class=Lich (CC:L)}",
+						"{@filter 5th|spells|level=5|class=Lich (CC:L)}",
+						"{@filter 6th|spells|level=6|class=Lich (CC:L)}",
+						"{@filter 7th|spells|level=7|class=Lich (CC:L)}",
+						"{@filter 8th|spells|level=8|class=Lich (CC:L)}",
+						"{@filter 9th|spells|level=9|class=Lich (CC:L)}"
 					],
 					"rows": [
 						[
@@ -649,6 +649,40 @@
 					]
 				}
 			],
+			"classSpells": [
+				"classname": "Wizard",
+				"classSource": "PHB"
+			],
+			"multiclassing": {
+				"requirements": {
+					"int": 13,
+					"wis": 13
+				},
+				"proficienciesGained": {
+					"weapons": [
+						"{@item dattger|phb|daggers}",
+						"{@item dart|phb|darts}",
+						"{@item sling|phb|slings}",
+						"{@item quarterstaff|phb|quarterstaffs}",
+						"{@item light crossbow|phb|light crossbows}"
+					],
+					"skills": [
+						{
+							"choose": {
+								"from": [
+									"arcana",
+									"deception",
+									"history",
+									"insight",
+									"investigation",
+									"religion"
+								],
+								"count": 1
+							}
+						}
+					]
+				}
+			},
 			"cantripProgression": [
 				3,
 				3,
@@ -692,37 +726,7 @@
 				17,
 				17,
 				18
-			],
-			"multiclassing": {
-				"requirements": {
-					"int": 13,
-					"wis": 13
-				},
-				"proficienciesGained": {
-					"weapons": [
-						"{@item dattger|phb|daggers}",
-						"{@item dart|phb|darts}",
-						"{@item sling|phb|slings}",
-						"{@item quarterstaff|phb|quarterstaffs}",
-						"{@item light crossbow|phb|light crossbows}"
-					],
-					"skills": [
-						{
-							"choose": {
-								"from": [
-									"arcana",
-									"deception",
-									"history",
-									"insight",
-									"investigation",
-									"religion"
-								],
-								"count": 2
-							}
-						}
-					]
-				}
-			}
+			]
 		}
 	],
 	"classFeature": [
@@ -941,7 +945,7 @@
 			"classSource": "CreatureCohortsTheLich",
 			"level": 2,
 			"entries": [
-				"See {@book chapter 10|PHB|10} of the PHB for the general rules of spellcasting and the end of this document for the {@filter Wizard spell list|spells|class=wizard}.",
+				"See {@book chapter 10|PHB|10} of the PHB for the general rules of spellcasting and the end of this document for the {@filter Lich spell list|spells|class=Lich (CC:L)}.",
 				{
 					"name": "Cantrips",
 					"type": "entries",
