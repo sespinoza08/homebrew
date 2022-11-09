@@ -11,7 +11,7 @@
 				"convertedBy": [
 					"dsspeanutbutter#1527"
 				],
-				"version": "1.1.0",
+				"version": "1.0.0",
 				"url": "https://www.gmbinder.com/share/-MZu4xfdbggkPu4vjp-l",
 				"targetSchema": "1.0.0",
 				"color": "2be0a7"
@@ -650,8 +650,10 @@
 				}
 			],
 			"classSpells": [
-				"classname": "Wizard",
-				"classSource": "PHB"
+				{
+					"classname": "Wizard",
+					"classSource": "PHB"
+				}
 			],
 			"multiclassing": {
 				"requirements": {
