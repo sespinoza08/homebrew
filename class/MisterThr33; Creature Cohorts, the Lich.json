@@ -4,21 +4,22 @@
 			{
 				"json": "CreatureCohortsTheLich",
 				"abbreviation": "CC:L",
-				"full": "Creature Cohorts: The Lich",
+				"full": "The Lich",
 				"authors": [
 					"u/Mister_Thr33"
 				],
 				"convertedBy": [
 					"dsspeanutbutter#1527"
 				],
-				"version": "1.0.0",
-				"url": "https://www.gmbinder.com/share/-MZu4xfdbggkPu4vjp-l",
-				"targetSchema": "1.0.0",
-				"color": "2be0a7"
+				"version": "2.0",
+				"color": "2be0a7",
+				"url": "https://drive.google.com/file/d/16yk2cUROq735vKwAW7zRP11KasTrGt1R/view?usp=sharing",
+				"targetSchema": "2.11"
 			}
 		],
-		"dateAdded": 1667870352,
-		"dateLastModified": 1667870352
+		"dateAdded": 1602800561,
+		"dateLastModified": 1602800561,
+		"_dateLastModifiedHash": "7442ebf616"
 	},
 	"race": [
 		{
@@ -51,6 +52,9 @@
 			},
 			"resist": [
 				"poison"
+			],
+			"conditionImmune": [
+				"exhaustion"
 			],
 			"skillProficiencies": [
 				{
@@ -164,15 +168,9 @@
 				"int",
 				"wis"
 			],
-			"spellcastingAbility": "int",
-			"casterProgression": "full",
 			"startingProficiencies": {
 				"weapons": [
-					"{@item dagger|phb|daggers}",
-					"{@item dart|phb|darts}",
-					"{@item sling|phb|slings}",
-					"{@item quarterstaff|phb|quarterstaffs}",
-					"{@item light crossbow|phb|light crossbows}"
+					"simple"
 				],
 				"skills": [
 					{
@@ -180,233 +178,181 @@
 							"from": [
 								"arcana",
 								"deception",
-								"history",
 								"insight",
-								"investigation",
-								"religion"
+								"intimidation",
+								"medicine",
+								"nature",
+								"perception",
+								"persuasion",
+								"religion",
+								"survival"
 							],
 							"count": 2
 						}
 					}
 				]
 			},
+			"conditionImmune": [
+				"exhaustion"
+			],
 			"startingEquipment": {
 				"additionalFromBackground": true,
 				"default": [
-					"(a) {@item scholar's pack|phb} or (b) {@item explorer's pack|phb}",
-					"(a) an {@item hourglass|phb} and 50 gold",
-					"(a) a {@item spellbook|phb}"
+					"(a) a {@item quarterstaff|phb} or (b) any {@filter simple weapon|items|source=phb|category=basic|type=simple weapon}",
+					"(a) an {@item arcane focus|phb} or (b) a {@item component pouch|phb}",
+					"(a) an {@item explorer's pack|phb} or (b) a {@item dungeoneer's pack|phb}",
+					"Two {@item dagger|phb|daggers}"
 				],
+				"goldAlternative": "{@dice 4d4 × 10|4d4 × 10|Starting Gold}",
 				"defaultData": [
 					{
 						"a": [
-							"scholar's pack|phb"
+							"quarterstaff|phb"
 						],
 						"b": [
+							{
+								"equipmentType": "weaponSimple"
+							}
+						]
+					},
+					{
+						"a": [
+							"arcane focus|phb"
+						],
+						"b": [
+							"component pouch|phb"
+						]
+					},
+					{
+						"a": [
 							"explorer's pack|phb"
+						],
+						"b": [
+							"dungeoneer's pack|phb"
 						]
 					},
 					{
-						"a": [
-							"hourglass|phb"
-						]
-					},
-					{
-						"a": [
-							"spellbook|phb"
+						"_": [
+							{
+								"item": "dagger|phb",
+								"quantity": 2
+							}
 						]
 					}
 				]
 			},
-			"classFeatures": [
-				"Spellcasting|Lich|CreatureCohortsTheLich|1",
-				"Mask of Undeath|Lich|CreatureCohortsTheLich|1",
-				"Natural Armor|Lich|CreatureCohortsTheLich|1",
-				"Forbidden Lore|Lich|CreatureCohortsTheLich|2",
-				{
-					"classFeature": "Ascension Rite Feature|Lich|CreatureCohortsTheLich|2",
-					"gainSubclassFeature": true
-				},
-				"Arcane Obscura|Lich|CreatureCohortsTheLich|3",
-				"Frightening Gaze|Lich|CreatureCohortsTheLich|3",
-				"Ability Score Improvement|Lich|CreatureCohortsTheLich|4",
-				"Disrupt Life|Lich|CreatureCohortsTheLich|5",
-				{
-					"classFeature": "Ascension Rite Feature|Lich|CreatureCohortsTheLich|6",
-					"gainSubclassFeature": true
-				},
-				"Death Mantle|Lich|CreatureCohortsTheLich|7",
-				"Ability Score Improvement|Lich|CreatureCohortsTheLich|8",
-				{
-					"classFeature": "Ascension Rite Feature|Lich|CreatureCohortsTheLich|10",
-					"gainSubclassFeature": true
-				},
-				"Ability Score Improvement|Lich|CreatureCohortsTheLich|12",
-				{
-					"classFeature": "Ascension Rite Feature|Lich|CreatureCohortsTheLich|13",
-					"gainSubclassFeature": true
-				},
-				"Shun Mortality|Lich|CreatureCohortsTheLich|14",
-				"Ability Score Improvement|Lich|CreatureCohortsTheLich|16",
-				{
-					"classFeature": "Ascension Rite Feature|Lich|CreatureCohortsTheLich|18",
-					"gainSubclassFeature": true
-				},
-				"Ability Score Improvement|Lich|CreatureCohortsTheLich|19",
-				"Master of Unlife|Lich|CreatureCohortsTheLich|20"
-			],
-			"subclassTitle": "Rite",
+			"multiclassing": {
+				"requirements": {
+					"int": 13
+				}
+			},
+			"casterProgression": "full",
+			"spellcastingAbility": "int",
 			"classTableGroups": [
 				{
 					"colLabels": [
-						"Forbidden Lore Points"
+						"Forbidden Lore",
+						"Cantrips Known",
+						"Spells Known"
 					],
 					"rows": [
 						[
-							0
-						],
-						[
-							2
-						],
-						[
-							3
-						],
-						[
-							4
-						],
-						[
-							4
-						],
-						[
-							4
-						],
-						[
-							4
-						],
-						[
-							4
-						],
-						[
-							4
-						],
-						[
-							5
-						],
-						[
-							5
-						],
-						[
-							6
-						],
-						[
-							6
-						],
-						[
-							7
-						],
-						[
-							7
-						],
-						[
-							8
-						],
-						[
-							8
-						],
-						[
-							9
-						],
-						[
-							9
-						],
-						[
-							10
-						]
-					]
-				},
-				{
-					"colLabels": [
-						"{@filter Cantrips Known|spells|level=0|class=Lich (CC:L)}",
-						"{@filter Spells Known|spells|class=Lich (CC:L)}"
-					],
-					"rows": [
-						[
+							0,
 							3,
 							2
 						],
 						[
+							2,
 							3,
 							3
 						],
 						[
 							3,
+							3,
 							4
 						],
 						[
 							4,
+							4,
 							5
 						],
 						[
+							5,
 							4,
 							6
 						],
 						[
+							6,
 							4,
 							7
 						],
 						[
+							7,
 							4,
 							8
 						],
 						[
+							8,
 							4,
 							9
 						],
 						[
+							9,
 							4,
 							10
 						],
 						[
+							10,
 							5,
 							11
 						],
 						[
+							11,
 							5,
 							12
 						],
 						[
+							12,
 							5,
 							12
 						],
 						[
+							13,
 							5,
 							13
 						],
 						[
+							14,
 							5,
 							14
 						],
 						[
+							15,
 							5,
 							14
 						],
 						[
+							16,
 							5,
 							15
 						],
 						[
+							17,
 							5,
 							16
 						],
 						[
+							18,
 							5,
 							17
 						],
 						[
+							19,
 							5,
 							17
 						],
 						[
+							20,
 							5,
 							18
 						]
@@ -415,15 +361,15 @@
 				{
 					"title": "Spell Slots per Spell Level",
 					"colLabels": [
-						"{@filter 1st|spells|level=1|class=Lich (CC:L)}",
-						"{@filter 2nd|spells|level=2|class=Lich (CC:L)}",
-						"{@filter 3rd|spells|level=3|class=Lich (CC:L)}",
-						"{@filter 4th|spells|level=4|class=Lich (CC:L)}",
-						"{@filter 5th|spells|level=5|class=Lich (CC:L)}",
-						"{@filter 6th|spells|level=6|class=Lich (CC:L)}",
-						"{@filter 7th|spells|level=7|class=Lich (CC:L)}",
-						"{@filter 8th|spells|level=8|class=Lich (CC:L)}",
-						"{@filter 9th|spells|level=9|class=Lich (CC:L)}"
+						"{@filter 1st|spells|level=1|class=Lich (CC:L}",
+						"{@filter 2nd|spells|level=2|class=Lich (CC:L}",
+						"{@filter 3rd|spells|level=3|class=Lich (CC:L}",
+						"{@filter 4th|spells|level=4|class=Lich (CC:L}",
+						"{@filter 5th|spells|level=5|class=Lich (CC:L}",
+						"{@filter 6th|spells|level=6|class=Lich (CC:L}",
+						"{@filter 7th|spells|level=7|class=Lich (CC:L}",
+						"{@filter 8th|spells|level=8|class=Lich (CC:L}",
+						"{@filter 9th|spells|level=9|class=Lich (CC:L}"
 					],
 					"rows": [
 						[
@@ -649,42 +595,100 @@
 					]
 				}
 			],
+			"classFeatures": [
+				"Spellcasting|Lich|CreatureCohortsTheLich|1",
+				"Mask of Undeath|Lich|CreatureCohortsTheLich|1",
+				"Natural Armor|Lich|CreatureCohortsTheLich|1",
+				"Forbidden Lore|Lich|CreatureCohortsTheLich|2",
+				{
+					"classFeature": "Ascension Rite|Lich|CreatureCohortsTheLich|2",
+					"gainSubclassFeature": true
+				},
+				"Arcane Obscura|Lich|CreatureCohortsTheLich|3",
+				"Frightening Gaze|Lich|CreatureCohortsTheLich|3",
+				"Ability Score Improvement|Lich|CreatureCohortsTheLich|4",
+				"Disrupt Life|Lich|CreatureCohortsTheLich|5",
+				{
+					"classFeature": "Rite Feature|Lich|CreatureCohortsTheLich|6",
+					"gainSubclassFeature": true
+				},
+				"Death Mantle|Lich|CreatureCohortsTheLich|7",
+				"Ability Score Improvement|Lich|CreatureCohortsTheLich|8",
+				{
+					"classFeature": "Rite Feature|Lich|CreatureCohortsTheLich|10",
+					"gainSubclassFeature": true
+				},
+				"Ability Score Improvement|Lich|CreatureCohortsTheLich|12",
+				{
+					"classFeature": "Rite Feature|Lich|CreatureCohortsTheLich|13",
+					"gainSubclassFeature": true
+				},
+				"Shun Mortality|Lich|CreatureCohortsTheLich|14",
+				"Ability Score Improvement|Lich|CreatureCohortsTheLich|16",
+				{
+					"classFeature": "Rite Feature|Lich|CreatureCohortsTheLich|18",
+					"gainSubclassFeature": true
+				},
+				"Ability Score Improvement|Lich|CreatureCohortsTheLich|19",
+				"Master of Unlife|Lich|CreatureCohortsTheLich|20"
+			],
+			"subclassTitle": "Rite",
 			"classSpells": [
 				{
-					"classname": "Wizard",
+					"className": "Wizard",
 					"classSource": "PHB"
 				}
 			],
-			"multiclassing": {
-				"requirements": {
-					"int": 13,
-					"wis": 13
-				},
-				"proficienciesGained": {
-					"weapons": [
-						"{@item dattger|phb|daggers}",
-						"{@item dart|phb|darts}",
-						"{@item sling|phb|slings}",
-						"{@item quarterstaff|phb|quarterstaffs}",
-						"{@item light crossbow|phb|light crossbows}"
-					],
-					"skills": [
+			"fluff": [
+				{
+					"type": "section",
+					"name": "The Lich",
+					"source": "CreatureCohortsTheLich",
+					"page": 1,
+					"entries": [
+						"Standing alone in the swamp, knee deep in water, a half-orc woman places her hand upon the trunk of a very large tree. She mutters a question under her breath, and her vision moves through the vines that run throughout the swamp, as the swamp itself shows her the answer she seeks.",
+						"Within a small purple tent in the market district of a large city, a tiefling sits hunched over a crystal ball, as he peers through reality to predict the future of the young boy who is paying him.",
+						"Standing amidst a sea of corpses, the elven woman turns her gaze to one of the few remaining soldiers, as he cowers and begs for his life. She begins to cackle maniacally, as pain begins to wash throughout the soldier's entire body.",
+						"Liches are the outcasts of society, powerful spellcasters who study magics frowned upon by most people. Usually prefering to stay away from cities and towns, Liches seclude themselves to forests and swamps, away from the prying eyes of others, where they can practice their arcane arts in peace.",
 						{
-							"choose": {
-								"from": [
-									"arcana",
-									"deception",
-									"history",
-									"insight",
-									"investigation",
-									"religion"
-								],
-								"count": 1
-							}
+							"type": "entries",
+							"name": "Scholars of the Dark Arts",
+							"page": 1,
+							"entries": [
+								"Similarly to their wizardly bretheren, Liches use their knowledge of the arcane to perform their magic, studying spells and rituals. However, unlike wizards, Liches are not bound by silly things like laws and morals. Free to study the secrets of the arcane in peace, Liches are able to study magics that others would not dare look into; Powerful spells that rip the life from others, rituals that bring forth horrible fiends, and potent curses that cripple their targets.",
+								"Liches are not inherently evil. While there are many who pursue this path as a way to gain power, most simply wish to pursue their studies without the restrictions of magic institutions and colleges. Others are simply born into the life of a Lich, never knowing the rules or morals of standard mages, simply studying what catches their interest. A rare few are born with a gift for the dark arts, abandoning society to futher improve their natural talents."
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Familiar Magic",
+							"page": 1,
+							"entries": [
+								"While Liches come in many shapes and forms, almost all of them carry a familiar with them. While many mages keep familiars with them, Liches tend to have a special bond with their familiars, often becoming very attached to the creatures. Their familiars act as both companion and protector, acting as scouts and conduits for the Lich's magic.",
+								"As a Lich grows in power, their familar reflects this as well, becoming more capable of delivering a Lich's magic. Powerful Liches are known to carry familiars that are able to hold their own against seasoned warriors. The most powerful Liches have familiars that are able to share the burden of their magic, performing feats of spellcasting far outside the limits of any normal wizard."
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Creating a Lich",
+							"page": 2,
+							"entries": [
+								"While creating your Lich character, one of the first things you should decide is why they follow the path of a Lich. What led you to this decision? Were you once a member of a prestigious magic academy, but left due to the limitations of what you could learn? Perhaps you found an old tome that directed you in the ways of old magic. Or perhaps you were simply born into the life of a Lich, never knowing any different.",
+								"What kind of life did your character live before their adventuring career began? Did you isolate yourself from the world, hiding away in forests and caves where you could practice you magic in peace? Did you try to integrate yourself with society, hiding away your magical prowess? Maybe you were well known as the Lich that lived at the edge of town, interacting with the townsfolk only when they came by. Were you a part of a coven of Liches? How large is it? Where is it based? Do you all live together, or do you simply meet every so often to perform your rituals?",
+								"What led you to go out into the world and begin adventuring? Was it a craving for more power? An opportunity to test the skills and spells that you have learned over your years of study? Perhaps your coven sent you out on a quest or a journey to hone your skills. Or maybe your coven was raided by the nearby law enforcement, and now you're on the run."
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Quick Build",
+							"page": 2,
+							"entries": [
+								"You can make a Lich quickly by following these suggestions. First, Intelligence should be your highest ability score, followed by Wisdom or Constitution. Second, choose the {@background Sage} or {@background Hermit} background."
+							]
 						}
 					]
 				}
-			},
+			],
 			"cantripProgression": [
 				3,
 				3,
@@ -706,135 +710,76 @@
 				5,
 				5,
 				5
-			],
-			"spellsKnownProgression": [
-				2,
-				3,
-				4,
-				5,
-				6,
-				7,
-				8,
-				9,
-				10,
-				11,
-				12,
-				12,
-				13,
-				14,
-				14,
-				15,
-				16,
-				17,
-				17,
-				18
 			]
 		}
 	],
 	"classFeature": [
 		{
-			"name": "Ability Score Improvement",
+			"name": "Spellcasting",
 			"source": "CreatureCohortsTheLich",
 			"className": "Lich",
 			"classSource": "CreatureCohortsTheLich",
-			"level": 4,
+			"page": 3,
+			"level": 1,
 			"entries": [
-				"When you reach 4th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature."
-			]
-		},
-		{
-			"name": "Ability Score Improvement",
-			"source": "CreatureCohortsTheLich",
-			"className": "Lich",
-			"classSource": "CreatureCohortsTheLich",
-			"level": 8,
-			"entries": [
-				"When you reach 8th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature."
-			]
-		},
-		{
-			"name": "Ability Score Improvement",
-			"source": "CreatureCohortsTheLich",
-			"className": "Lich",
-			"classSource": "CreatureCohortsTheLich",
-			"level": 12,
-			"entries": [
-				"When you reach 12th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature."
-			]
-		},
-		{
-			"name": "Ability Score Improvement",
-			"source": "CreatureCohortsTheLich",
-			"className": "Lich",
-			"classSource": "CreatureCohortsTheLich",
-			"level": 16,
-			"entries": [
-				"When you reach 16th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature."
-			]
-		},
-		{
-			"name": "Ability Score Improvement",
-			"source": "CreatureCohortsTheLich",
-			"className": "Lich",
-			"classSource": "CreatureCohortsTheLich",
-			"level": 19,
-			"entries": [
-				"When you reach 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature."
-			]
-		},
+				"Drawing upon your arcane knowledge, you can cast spells to influence those around you. See {@book chapter 10|PHB|10} of the PHB for the general rules of spellcasting, and the end of this document for the {@filter Lich spell list|spells|class=Lich (CC:L)}.",
 				{
-			"name": "Ascension Rite Feature",
-			"className": "Lich",
-			"classSource": "CreatureCohortsTheLich",
-			"level": 2,
-			"page": 8,
-			"source": "CreatureCohortsTheLich",
-			"entries": [
-				"At 2nd level, you gain a feature granted by your Ascension Rite."
-			]
-		},
+					"type": "entries",
+					"name": "Cantrips",
+					"page": 3,
+					"entries": [
+						"At 1st level, you know three cantrips of your choice from the {@filter Lich spell list|spells|class=Lich (CC:L)}. You gain additional Lich cantrips of your choice at higher levels, as shown in the Cantrips Known column of the Lich table."
+					]
+				},
 				{
-			"name": "Ascension Rite Feature",
-			"className": "Lich",
-			"classSource": "CreatureCohortsTheLich",
-			"level": 6,
-			"page": 8,
-			"source": "CreatureCohortsTheLich",
-			"entries": [
-				"At 6th level, you gain a feature granted by your Ascension Rite."
-			]
-		},
+					"type": "entries",
+					"name": "Preparing and Casting Spells",
+					"page": 3,
+					"entries": [
+						"The Lich table shows how many spell slots you have to cast your Lich spells of 1st Level and higher. To cast one of these spells, you must expend a slot of the spell's level or higher. You regain all expended spell slots when you finish a long rest.",
+						"You prepare the list of Lich spells that are available for you to cast, choosing from the Lich spell list. When you do so, choose a number of Lich spells equal to your Intelligence modifier + your Lich level (minimum of one spell). The spells must be of a level for which you have spell slots.",
+						"For example, if you are a 3rd-level Lich, you have four 1st-level and two 2nd-level Spell Slots. With an Intelligence of 16, your list of prepared spells can include six spells of 1st or 2nd Level, in any combination. If you prepare the 1st-level spell {@spell Lich bolt}, you can cast it using a 1st-level or 2nd-level slot. Casting the spell doesn't remove it from your list of prepared spells.",
+						"You can change your list of prepared spells when you finish a long rest. Preparing a new list of Lich spells requires time spent recalling the rituals and incantations for the spells: at least 1 minute per spell Level for each spell on your list."
+					]
+				},
 				{
-			"name": "Ascension Rite Feature",
-			"className": "Lich",
-			"classSource": "CreatureCohortsTheLich",
-			"level": 10,
-			"page": 8,
-			"source": "CreatureCohortsTheLich",
-			"entries": [
-				"At 10th level, you gain a feature granted by your Ascension Rite."
-			]
-		},
+					"type": "entries",
+					"name": "Spellcasting Ability",
+					"page": 3,
+					"entries": [
+						"Intelligence is your spellcasting ability for your Lich spells, as your power comes from your study of the dark arts. You use your Intelligence whenever a spell refers to your spellcasting ability. In addition, you use your Intelligence modifier when setting the saving throw DC for a Lich spell you cast and when making an attack roll with one.",
+						{
+							"type": "abilityDc",
+							"name": "Spell",
+							"attributes": [
+								"int"
+							]
+						},
+						{
+							"type": "abilityAttackMod",
+							"name": "Spell",
+							"attributes": [
+								"int"
+							]
+						}
+					]
+				},
 				{
-			"name": "Ascension Rite Feature",
-			"className": "Lich",
-			"classSource": "CreatureCohortsTheLich",
-			"level": 13,
-			"page": 8,
-			"source": "CreatureCohortsTheLich",
-			"entries": [
-				"At 13th level, you gain a feature granted by your Ascension Rite."
-			]
-		},
+					"type": "entries",
+					"name": "Ritual Casting",
+					"page": 3,
+					"entries": [
+						"You can cast any Lich spell you know as a ritual if that spell has the ritual tag."
+					]
+				},
 				{
-			"name": "Ascension Rite Feature",
-			"className": "Lich",
-			"classSource": "CreatureCohortsTheLich",
-			"level": 18,
-			"page": 8,
-			"source": "CreatureCohortsTheLich",
-			"entries": [
-				"At 18th level, you gain a feature granted by your Ascension Rite."
+					"type": "entries",
+					"name": "Spellcasting Focus",
+					"page": 3,
+					"entries": [
+						"You can use an {@item arcane focus|phb} (see {@book chapter 5|PHB|5} of the PHB \"Equipment\") as a spellcasting focus for your Lich spells."
+					]
+				}
 			]
 		},
 		{
@@ -860,92 +805,26 @@
 			]
 		},
 		{
-			"name": "Spellcasting",
-			"className": "Lich",
-			"classSource": "CreatureCohortsTheLich",
-			"level": 1,
-			"page": 3,
-			"source": "CreatureCohortsTheLich",
-			"entries": [
-				"As a former wizard, you were accustomed to keeping your arcane knowledge in written form. Using a spellbook allowed you a great many options at your fingertips. However, your transformation into a lich has changed that somewhat. On the one hand, you now have intimate knowledge of many of your spells, such that you are no longer fully reliant on your spellbook. On the other hand, you quickly learn to adapt your spell repertoire as you go (see the Forbidden Lore ability, below). You might feel restricted in your spells known, at least initially. Over time, this will become less of an issue as your ability to adapt grows further.",
-				"See {@book chapter 10|PHB|10} of the PHB for the general rules of spellcasting.",
-				{
-					"name": "Cantrips",
-					"type": "entries",
-					"entries": [
-						"At 1st level, you know three cantrips of your choice from the wizard spell list. You learn additional wizard cantrips of your choice at higher levels, as shown in the Cantrips Known column of the Wizard table."
-					]
-				},
-				{
-					"name": "Spellbook",
-					"type": "entries",
-					"entries": [
-						"At 1st level, you have a spellbook containing four 1st-level wizard spells of your choice."
-					]
-				},
-				{
-					"name": "Spell Slots",
-					"type": "entries",
-					"entries": [
-						"The Lich table shows how many spell slots you have to cast your spells of 1st level and higher. To cast one of these lich spells, you must expend a slot of the spell's level or higher. You regain all expended spell slots when you finish a long rest.",
-						"For example, if you know the 1st-level spell {@spell burning hands} and have a 1st-level and a 2nd-level slot available, you can cast {@spell burning hands} using either slot."
-					]
-				},
-				{
-					"name": "Spells Known of 1st Level and Higher",
-					"type": "entries",
-					"entries": [
-						"Lke a sorcerer, you have a vast repertoire of arcane knowledge at hand wherever you go, with or without your spellbook. Unlike a sorcerer, though, you do still retain some of a wizard's spell flexibility and can adapt over time, using your spellbook to expand your magical abilities.",
-						"You know two 1st-level spells of your choice from the wizard spell list.",
-						"The Spells Known column of the Lich table shows when you learn more wizard spells of your choice. In addition, each time you gain a lich level you can add one wizard spell of your choice to your spellbook. These spells must be of a level for which you have spell slots, as shown on the Lich table. For instance, when you reach 3rd level in this class, you can learn one new spell of 1st or 2nd level, and can also add one new spell to your spellbook of 1st or 2nd level.",
-						"In short, the spells you {@italic know} are the spells you have available at any given time, and your spellbook may contain those spells that you wish to have in a pinch, but may not need accessible at all times. You do not prepare spells, but you will learn to cast spells directly from your spellbook on a limited basis (with the Forbidden Lore ability, below).",
-						"On your adventures, you might also find other spells that you can add to your spellbook (see the (Your Spellbook) sidebar).",
-						"Additionally, when you gain a level in this class, you can choose one of the wizard spells you know and replace it with another spell from the wizard spell list, which also must be of a level for which you have spell slots."
-					]
-				},
-				{
-					"name": "Spellcasting Ability",
-					"type": "entries",
-					"entries": [
-						"Intelligence is your spellcasting ability for your wizard spells, since you learn your spells through a near-comprehensive level of arcane knowledge. This may be due to your ascension to lichdom alone, through years of study or through an arrangement with a powerful fiend. You use your Intelligence whenever a spell refers to your spellcasting ability. In addition, you use your Intelligence modifier when setting the saving throw DC for a wizard spell you cast and when making an attack roll with one.",
-						{
-							"type": "abilityDc",
-							"name": "Spell",
-							"attributes": [
-								"int"
-							]
-						},
-						{
-							"type": "abilityAttackMod",
-							"name": "Spell",
-							"attributes": [
-								"int"
-							]
-						}
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Spellcasting Focus",
-					"entries": [
-						"You can cast a wizard spell as a ritual if that spell has the ritual tag and you either have the spell known or in your spellbook."
-					]
-				},
-				{
-					"name": "Ritual Casting",
-					"type": "entries",
-					"entries": [
-						"You can cast a wizard spell as a ritual if that spell has the ritual tag and you either have the spell known or in your spellbook."
-					]
-				}
-			]
-		},
-		{
 			"name": "Forbidden Lore",
 			"source": "CreatureCohortsTheLich",
 			"className": "Lich",
 			"classSource": "CreatureCohortsTheLich",
 			"level": 2,
+			"resources": [
+				{
+					"name": "Forbidden Lore",
+					"type": "integer",
+					"count": "<$level$>",
+					"recharge": "restLong"
+				}
+			],
+			"foundrySystem": {
+				"item.activation.cost": "1",
+				"item.activation.type": "bonus action",
+				"item.actionType": "util",
+				"item.uses.max": "classes.lich.levels",
+				"item.uses.per": "sr"
+			},
 			"entries": [
 				"See {@book chapter 10|PHB|10} of the PHB for the general rules of spellcasting and the end of this document for the {@filter Lich spell list|spells|class=Lich (CC:L)}.",
 				{
@@ -976,21 +855,7 @@
 					"entries": [
 						"At 2nd level, you can use lore points to cast a spell directly from your spellbook. The spell must be a wizard spell for which you have spell slots. To cast a spell this way, you spend a number of lore points equal to the spell's level when casting the spell. You also expend a spell slot of the spell's level. In all other ways, the spell is treated as though it were being cast normally.",
 						"In addition, whenever you would add your proficiency bonus to an Intelligence-based ability check, you may spend 1 lore point to add double your proficiency bonus to that check instead. You may choose to use this ability after the roll is made, but before the success or failure of the check is determined.",
-						"You will learn new ways to use your lore points as you level.",
-						{
-							"type": "abilityDc",
-							"name": "Spell",
-							"attributes": [
-								"cha"
-							]
-						},
-						{
-							"type": "abilityAttackMod",
-							"name": "Spell",
-							"attributes": [
-								"cha"
-							]
-						}
+						"You will learn new ways to use your lore points as you level."
 					]
 				}
 			]
@@ -1034,6 +899,18 @@
 			]
 		},
 		{
+			"name": "Ability Score Improvement",
+			"source": "CreatureCohortsTheLich",
+			"className": "Lich",
+			"classSource": "CreatureCohortsTheLich",
+			"page": 4,
+			"level": 4,
+			"entries": [
+				"When you reach 4th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+				"If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."
+			]
+		},
+		{
 			"name": "Disrupt Life",
 			"className": "Lich",
 			"classSource": "CreatureCohortsTheLich",
@@ -1041,19 +918,19 @@
 			"page": 7,
 			"source": "CreatureCohortsTheLich",
 			"entries": [
-				"In addition to embracing undeath, a lich also gains profane knowledge of spells and spell-like abilities thought lost to the ages. At 5th level, you may use an action during your turn to blast your surroundings with raw negative energy. All living creatures of your choice within 20 feet of you must make a Constitution saving throw against your spellcasting save DC. A target takes 6d6 necrotic damage on a failed save, or half as much damage on a successful one. If a target is at half of their normal maximum hit points or fewer, they roll their saving throw with disadvantage.",
+				"In addition to embracing undeath, a lich also gains profane knowledge of spells and spell-like abilities thought lost to the ages. At 5th level, you may use an action during your turn to blast your surroundings with raw negative energy. All living creatures of your choice within 20 feet of you must make a Constitution saving throw against your spellcasting save DC. A target takes {@dice 6d6} necrotic damage on a failed save, or half as much damage on a successful one. If a target is at half of their normal maximum hit points or fewer, they roll their saving throw with disadvantage.",
 				"You may use this ability once, and recover any expended use upon completion of a long rest. When you have no uses remaining, you can continue to use this ability, but must expend 3 lore points and a 3rd-level spell slot each time you choose to do so."
 			]
 		},
-				{
-			"name": "Ascension Rite",
+		{
+			"name": "Rite Feature",
+			"source": "CreatureCohortsTheLich",
 			"className": "Lich",
 			"classSource": "CreatureCohortsTheLich",
+			"page": 4,
 			"level": 6,
-			"page": 6,
-			"source": "CreatureCohortsTheLich",
 			"entries": [
-				"At 6th level, you gain a feature granted by your Ascension Rite."
+				"At 6th level, you gain a feature granted by your Lich Coven."
 			]
 		},
 		{
@@ -1068,8 +945,20 @@
 				"You may use this ability once, and recover any expended use upon completion of a long rest. When you have no uses remaining, you can continue to use this ability, but must expend 3 lore points and a 3rd-level spell slot each time you choose to do so."
 			]
 		},
-				{
-			"name": "Ascension Rite",
+		{
+			"name": "Ability Score Improvement",
+			"source": "CreatureCohortsTheLich",
+			"className": "Lich",
+			"classSource": "CreatureCohortsTheLich",
+			"page": 4,
+			"level": 8,
+			"entries": [
+				"When you reach 8th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+				"If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."
+			]
+		},
+		{
+			"name": "Rite Feature",
 			"className": "Lich",
 			"classSource": "CreatureCohortsTheLich",
 			"level": 10,
@@ -1079,8 +968,20 @@
 				"At 10th level, you gain a feature granted by your Ascension Rite."
 			]
 		},
-				{
-			"name": "Ascension Rite",
+		{
+			"name": "Ability Score Improvement",
+			"source": "CreatureCohortsTheLich",
+			"className": "Lich",
+			"classSource": "CreatureCohortsTheLich",
+			"page": 4,
+			"level": 12,
+			"entries": [
+				"When you reach 12th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+				"If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."
+			]
+		},
+		{
+			"name": "Rite Feature",
 			"className": "Lich",
 			"classSource": "CreatureCohortsTheLich",
 			"level": 13,
@@ -1097,21 +998,51 @@
 			"level": 14,
 			"page": 8,
 			"source": "CreatureCohortsTheLich",
+			"immunity": [
+				"poison"
+			],
+			"conditionImmune": [
+				"poisoned"
+			],
 			"entries": [
 				"As you ascend further into lichdom, you leave behind those who would litter the footnotes of history. At 14th level, you have immunity to diseases, as well as immunity to poison damage and the poisoned condition. In addition, you now count only as undead for the purposes of spells and abilities. As a result, you no longer age.",
 				"If you previously required air, food, drink or sleep... you need these things no longer. However, whenever you take a long rest you must spend at least four hours in a motionless, trance-like state. In this state, you appear asleep, but you are not unconscious, and you can see and hear as normal.",
 				"In addition, whenever you complete a long rest, you may choose one of the wizard spells you know and replace it with another spell from the wizard spell list, which also must be of a level for which you have spell slots."
 			]
 		},
-				{
-			"name": "Ascension Rite",
+		{
+			"name": "Ability Score Improvement",
+			"source": "CreatureCohortsTheLich",
 			"className": "Lich",
 			"classSource": "CreatureCohortsTheLich",
-			"level": 18,
-			"page": 6,
-			"source": "CreatureCohortsTheLich",
+			"page": 4,
+			"level": 16,
 			"entries": [
-				"At 18th level, you gain a feature granted by your Ascension Rite."
+				"When you reach 16th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+				"If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."
+			]
+		},
+		{
+			"name": "Rite Feature",
+			"source": "CreatureCohortsTheLich",
+			"className": "Lich",
+			"classSource": "CreatureCohortsTheLich",
+			"page": 4,
+			"level": 18,
+			"entries": [
+				"At 18th level, you gain a feature granted by your Lich Coven."
+			]
+		},
+		{
+			"name": "Ability Score Improvement",
+			"source": "CreatureCohortsTheLich",
+			"className": "Lich",
+			"classSource": "CreatureCohortsTheLich",
+			"page": 4,
+			"level": 19,
+			"entries": [
+				"When you reach 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+				"If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."
 			]
 		},
 		{
@@ -1128,53 +1059,21 @@
 			]
 		}
 	],
-	"subclass": [
-	{
-			"name": "Dread Lord",
-			"source": "CreatureCohortsTheLich",
-			"shortName": "Dread Lord",
-			"page": 9,
-			"subclassFeatures": [
-				"Phylactery|Lich|CreatureCohortsTheLich|Dread Lord|CreatureCohortsTheLich|2",
-				"Lich's Touch|Lich|CreatureCohortsTheLich|Dread Lord|CreatureCohortsTheLich|6",
-				"Karmic Bond|Lich|CreatureCohortsTheLich|Dread Lord|CreatureCohortsTheLich|10",
-				"True Phylactery|Lich|CreatureCohortsTheLich|Dread Lord|CreatureCohortsTheLich|13",
-				"Imprisonment|Lich|CreatureCohortsTheLich|Dread Lord|CreatureCohortsTheLich|18"
-			],
-			"className": "Lich",
-			"classSource": "CreatureCohortsTheLich"
-		},
-		{
-			"name": "Transcendent",
-			"source": "CreatureCohortsTheLich",
-			"shortName": "Transcendent",
-			"page": 11,
-			"subclassFeatures": [
-				"Awaken Radiance|Lich|CreatureCohortsTheLich|Transcendent|CreatureCohortsTheLich|2",
-				"Assert Immortality|Lich|CreatureCohortsTheLich|Transcendent|CreatureCohortsTheLich|6",
-				"Master of Energies|Lich|CreatureCohortsTheLich|Transcendent|CreatureCohortsTheLich|10",
-				"Deathless One|Lich|CreatureCohortsTheLich|Transcendent|CreatureCohortsTheLich|13",
-				"Innermost Light|Lich|CreatureCohortsTheLich|Transcendent|CreatureCohortsTheLich|18"
-			],
-			"className": "Lich",
-			"classSource": "CreatureCohortsTheLich"
-		}
-	],
 	"subclassFeature": [
-	{
+		{
 			"name": "Dread Lord",
 			"source": "CreatureCohortsTheLich",
 			"className": "Lich",
 			"classSource": "CreatureCohortsTheLich",
-			"subclassShortName": "Dread Lord",
 			"subclassSource": "CreatureCohortsTheLich",
-			"level": 2,
+			"subclassShortName": "DreadLord",
 			"page": 9,
+			"level": 2,
 			"entries": [
-				"For the majority of liches, following the path to undeath starts with a simple question: how much are you willing to sacrifice to live forever? Binding their souls to phylacteries, these wretched beings consume the souls of others to sustain themselves. Their foul abilities, too, lend themselves to making others suffer in order to benefit the dread lord exclusively.",
+				"Liches of the Coven of DreadLord are those gifted with foresight, the ability to glance through time to predict the future. They are able to use their magic to see through time, learning long lost secrets of the past, uncovering forgotten knowledge, peering into someone's mind, or glimpsing into the future. DreadLord are the most commonly known Liches, and though they are generally untrusted, there are many who would risk bargaining with a Lich to gain insight into their future.",
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Phylactery|Lich|CreatureCohortsTheLich|Dread Lord|CreatureCohortsTheLich|2"
+					"subclassFeature": "Phylactery|Lich|CreatureCohortsTheLich|DreadLord|CreatureCohortsTheLich|2"
 				}
 			]
 		},
@@ -1183,10 +1082,10 @@
 			"source": "CreatureCohortsTheLich",
 			"className": "Lich",
 			"classSource": "CreatureCohortsTheLich",
-			"subclassShortName": "Dread Lord",
 			"subclassSource": "CreatureCohortsTheLich",
-			"level": 2,
+			"subclassShortName": "DreadLord",
 			"page": 9,
+			"level": 2,
 			"header": 1,
 			"entries": [
 				"{@i 2nd-level Dread Lord feature}",
@@ -1203,10 +1102,10 @@
 			"source": "CreatureCohortsTheLich",
 			"className": "Lich",
 			"classSource": "CreatureCohortsTheLich",
-			"subclassShortName": "Dread Lord",
 			"subclassSource": "CreatureCohortsTheLich",
-			"level": 6,
+			"subclassShortName": "DreadLord",
 			"page": 9,
+			"level": 6,
 			"header": 2,
 			"entries": [
 				"{@i 6th-level Dread Lord feature}",
@@ -1220,10 +1119,10 @@
 			"source": "CreatureCohortsTheLich",
 			"className": "Lich",
 			"classSource": "CreatureCohortsTheLich",
-			"subclassShortName": "Dread Lord",
 			"subclassSource": "CreatureCohortsTheLich",
-			"level": 10,
+			"subclassShortName": "DreadLord",
 			"page": 9,
+			"level": 10,
 			"header": 2,
 			"entries": [
 				"{@i 10th-level Dread Lord feature}",
@@ -1237,10 +1136,10 @@
 			"source": "CreatureCohortsTheLich",
 			"className": "Lich",
 			"classSource": "CreatureCohortsTheLich",
-			"subclassShortName": "Dread Lord",
+			"subclassShortName": "DreadLord",
 			"subclassSource": "CreatureCohortsTheLich",
 			"level": 13,
-			"page": 9,
+			"page": 10,
 			"header": 2,
 			"entries": [
 				"{@i 13th-level Dread Lord feature}",
@@ -1255,10 +1154,10 @@
 			"source": "CreatureCohortsTheLich",
 			"className": "Lich",
 			"classSource": "CreatureCohortsTheLich",
-			"subclassShortName": "Dread Lord",
 			"subclassSource": "CreatureCohortsTheLich",
+			"subclassShortName": "DreadLord",
+			"page": 5,
 			"level": 18,
-			"page": 9,
 			"header": 2,
 			"entries": [
 				"{@i 18th-level Dread Lord feature}",
@@ -1267,21 +1166,21 @@
 				"You do not require any material components to cast {@spell imprisonment} in this way. If your phylactery is broken, casting the spell has no effect. If you are in demilich form (see the 'Your Phylactery' section), then you do not require any somatic components to cast the {@spell imprisonment} spell."
 			]
 		},
-	{
-			"name": "Transcendent",
+		{
+			"name": "The Transcendent",
 			"source": "CreatureCohortsTheLich",
 			"className": "Lich",
 			"classSource": "CreatureCohortsTheLich",
-			"subclassShortName": "Transcendent",
 			"subclassSource": "CreatureCohortsTheLich",
-			"level": 2,
+			"subclassshortName": "Transcendent",
 			"page": 11,
+			"level": 2,
 			"entries": [
 				"To be buried with honors is, for most societies, a respectable goal in and of itself. Some peoples, though, have discovered ways to bestow the deceased with radiant energy. In this way, it is possible to sustain the champions of the world indefinitely-- to honor them not through death, but beyond it.",
 				"The Deathless of Eberron are the most well-known example of this path, but the transcendent represents noble creatures as well as the neutral arbiters of the dead. Those who control radiant and necrotic energies to pursue perfection are best represented through the Rite of the Transcendent.",
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Awaken Radiance|Lich|CreatureCohortsTheLich|Transcendent|CreatureCohortsTheLich|2"
+					"subclassFeature": "Awaken Radiance|Lich|CreatureCohortsTheLich|Trans|CreatureCohortsTheLich|2"
 				}
 			]
 		},
@@ -1290,10 +1189,10 @@
 			"source": "CreatureCohortsTheLich",
 			"className": "Lich",
 			"classSource": "CreatureCohortsTheLich",
-			"subclassShortName": "Transcendent",
 			"subclassSource": "CreatureCohortsTheLich",
+			"subclassShortName": "Trans",
+			"page": 11,
 			"level": 2,
-			"page": 9,
 			"header": 1,
 			"entries": [
 				"{@i 2nd-level Transcendent feature}",
@@ -1306,10 +1205,10 @@
 			"source": "CreatureCohortsTheLich",
 			"className": "Lich",
 			"classSource": "CreatureCohortsTheLich",
-			"subclassShortName": "Transcendent",
 			"subclassSource": "CreatureCohortsTheLich",
-			"level": 6,
+			"subclassshortName": "Transcendent",
 			"page": 11,
+			"level": 6,
 			"header": 2,
 			"entries": [
 				"{@i 6th-level Transcendent feature}",
@@ -1322,10 +1221,10 @@
 			"source": "CreatureCohortsTheLich",
 			"className": "Lich",
 			"classSource": "CreatureCohortsTheLich",
-			"subclassShortName": "Transcendent",
 			"subclassSource": "CreatureCohortsTheLich",
-			"level": 10,
+			"subclassshortName": "Transcendent",
 			"page": 11,
+			"level": 10,
 			"header": 2,
 			"entries": [
 				"{@i 10th-level Transcendent feature}",
@@ -1340,7 +1239,7 @@
 			"source": "CreatureCohortsTheLich",
 			"className": "Lich",
 			"classSource": "CreatureCohortsTheLich",
-			"subclassShortName": "Transcendent",
+			"subclassshortName": "Transcendent",
 			"subclassSource": "CreatureCohortsTheLich",
 			"level": 13,
 			"page": 11,
@@ -1356,16 +1255,58 @@
 			"source": "CreatureCohortsTheLich",
 			"className": "Lich",
 			"classSource": "CreatureCohortsTheLich",
-			"subclassShortName": "Transcendent",
 			"subclassSource": "CreatureCohortsTheLich",
-			"level": 18,
+			"subclassshortName": "Transcendent",
 			"page": 11,
+			"level": 18,
 			"header": 2,
 			"entries": [
 				"{@i 18th-level Transcendent feature}",
 				"Your body has become a true beacon of immortal power. Creatures that approach you cannot help but feel awed (or terrified) by what you represent. At 18th level, any creature who targets you with an attack or a harmful spell must first make a Wisdom saving throw against your spellcasting save DC. On a failed save, the creature must choose a new target or lose the attack or spell. This ability doesn't protect you from area effects, such as the explosion of a fireball.",
 				"If you make an attack or cast a spell that affects an enemy creature, that creature becomes immune to this ability for 24 hours."
 			]
+		}
+	],
+	"subclass": [
+		{
+			"name": "Dread Lord",
+			"source": "CreatureCohortsTheLich",
+			"page": 9,
+			"shortName": "Dread Lord",
+			"subclassFeatures": [
+				"Dread Lord|Lich|CreatureCohortsTheLich|DreadLord|CreatureCohortsTheLich|2",
+				"Lich's Touch|Lich|CreatureCohortsTheLich|DreadLord|CreatureCohortsTheLich|6",
+				"Karmic Bond|Lich|CreatureCohortsTheLich|DreadLord|CreatureCohortsTheLich|10",
+				"True Phylactery|Lich|CreatureCohortsTheLich|DreadLord|CreatureCohortsTheLich|13",
+				"Imprisonment|Lich|CreatureCohortsTheLich|DreadLord|CreatureCohortsTheLich|18"
+			],
+			"className": "Lich",
+			"classSource": "CreatureCohortsTheLich"
+		},
+		{
+			"name": "The Transcendent",
+			"source": "CreatureCohortsTheLich",
+			"page": 11,
+			"shortName": "Transcendent",
+			"subclassSpells": [
+				"Darkness",
+				"Ray of Enfeeblement",
+				"Bestow Curse",
+				"Fear",
+				"Blight",
+				"Phantasmal Killer",
+				"enervation|xge",
+				"negative energy flood|xge"
+			],
+			"subclassFeatures": [
+				"The Transcendent|Lich|CreatureCohortsTheLich|Trans|CreatureCohortsTheLich|2",
+				"Assert Immortality|Lich|CreatureCohortsTheLich|Trans|CreatureCohortsTheLich|6",
+				"Master of Energies|Lich|CreatureCohortsTheLich|Trans|CreatureCohortsTheLich|10",
+				"Deathless One|Lich|CreatureCohortsTheLich|Trans|CreatureCohortsTheLich|13",
+				"Innermost Light|Lich|CreatureCohortsTheLich|Trans|CreatureCohortsTheLich|18"
+			],
+			"className": "Lich",
+			"classSource": "CreatureCohortsTheLich"
 		}
 	]
 }
