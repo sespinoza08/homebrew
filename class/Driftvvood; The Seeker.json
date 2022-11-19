@@ -1,0 +1,3695 @@
+{
+	"$schema": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_schema/homebrew.json",
+	"_meta": {
+		"sources": [
+			{
+				"json": "driftvvoodSeeker",
+				"abbreviation": "D:S",
+				"full": "Seeker",
+				"authors": [
+					"driftvvood"
+				],
+				"convertedBy": [
+					"dsspeanutbutter#1527"
+				],
+				"version": "1.0",
+				"color": "4d187e",
+				"url": "https://www.gmbinder.com/share/-NCX5uIcvkCDyPtc_V0t",
+				"targetSchema": "1.10.4"
+			}
+		],
+		"dateAdded": 1668622355
+	},
+	"class": [
+		{
+			"name": "Seeker",
+			"source": "driftvvoodSeeker",
+			"page": 2,
+			"hd": {
+				"number": 1,
+				"faces": 8
+			},
+			"proficiency": [
+				"int",
+				"con"
+			],
+			"startingProficiencies": {
+				"weapons": [
+					"simple",
+                    "{@item hand crossbow|phb|hand crossbows}",
+                    "{@item longsword|phb|longswords}",
+					"{@item rapier|phb|rapiers}",
+					"{@item shortsword|phb|shortswords}"
+				],
+                "armor": [
+                    "light",
+                    "{@item shield|phb|shields}"
+                ],
+				"skills": [
+					{
+						"choose": {
+							"from": [
+                                "acrobatics",
+								"arcana",
+								"deception",
+                                "history",
+                                "investigation",
+								"religion",
+								"perception",
+								"persuasion",
+                                "sleight of hand",
+                                "stealth",
+								"survival"
+							],
+							"count": 2
+						}
+					}
+				]
+			},
+			"startingEquipment": {
+				"additionalFromBackground": true,
+				"default": [
+					"(a) a {@item rapier|phb}, (b) {@item shortsword|phb}, (c) or {@item longsword|phb}",
+					"(a) a {@item shortbow|phb} and {@item arrows (20)|phb|20 arrows}, (b) {@item shortsword|phb}, (c) a {@item dagger|phb}, (d) or a {@item shield|phb}",
+                    "{@item leather armor|phb}",
+					"(a) an {@item thieve's tools|phb} or (b) a {@item dungeoneer's pack|phb}",
+					"one fortune-telling device such as tarot cards, a crystal ball, various teas, etc."
+				],
+				"goldAlternative": "{@dice 4d4 × 10|4d4 × 10|Starting Gold}",
+				"defaultData": [
+					{
+						"a": [
+							"quarterstaff|phb"
+						],
+						"b": [
+							"shortsword|phb"
+						],
+                        "c": [
+                            "longsword|phb"
+                        ]
+					},
+					{
+						"a": [
+							"shortbow|phb",
+                            "arrows (20)|phb"
+						],
+						"b": [
+							"shortsword|phb"
+						],
+                        "c": [
+                            "dagger|phb"
+                        ],
+                        "d": [
+                            "shield|phb"
+                        ]
+					},
+                    {
+                        "_":[
+                            "leather armor|phb"
+                        ]
+                    },
+					{
+						"a": [
+							"thieve's tools|phb"
+						],
+						"b": [
+							"dungeoneer's pack|phb"
+						]
+					}
+				]
+			},
+			"multiclassing": {
+				"requirements": {
+					"int": 13
+				}
+			},
+			"casterProgression": "full",
+			"spellcastingAbility": "int",
+            "preparedSpells": "<$level$> / 2 + <$int_mod$>",
+			"classTableGroups": [
+				{
+					"colLabels": [
+						"Rites",
+						"Cantrips Known"
+					],
+					"rows": [
+						[
+							1,
+							3
+						],
+						[
+							2,
+							3
+						],
+						[
+							3,
+							3
+						],
+						[
+							4,
+							4
+						],
+						[
+							5,
+							4
+						],
+						[
+							6,
+							4
+						],
+						[
+							7,
+							4
+						],
+						[
+							8,
+							4
+						],
+						[
+							9,
+							4
+						],
+						[
+							10,
+							5
+						],
+						[
+							11,
+							5
+						],
+						[
+							12,
+							5
+						],
+						[
+							13,
+							5
+						],
+						[
+							14,
+							5
+						],
+						[
+							15,
+							5
+						],
+						[
+							16,
+							5
+						],
+						[
+							17,
+							5
+						],
+						[
+							18,
+							5
+						],
+						[
+							19,
+							5
+						],
+						[
+							20,
+							5
+						]
+					]
+				},
+				{
+					"title": "Spell Slots per Spell Level",
+					"colLabels": [
+						"{@filter 1st|spells|level=1|class=Seeker (D:S)}",
+						"{@filter 2nd|spells|level=2|class=Seeker (D:S)}",
+						"{@filter 3rd|spells|level=3|class=Seeker (D:S)}",
+						"{@filter 4th|spells|level=4|class=Seeker (D:S)}",
+						"{@filter 5th|spells|level=5|class=Seeker (D:S)}",
+						"{@filter 6th|spells|level=6|class=Seeker (D:S)}",
+						"{@filter 7th|spells|level=7|class=Seeker (D:S)}",
+						"{@filter 8th|spells|level=8|class=Seeker (D:S)}",
+						"{@filter 9th|spells|level=9|class=Seeker (D:S)}"
+					],
+					"rows": [
+						[
+							2,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							3,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							4,
+							2,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							2,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							1,
+							0,
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							2,
+							0,
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							3,
+							1,
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							3,
+							2,
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							3,
+							2,
+							1,
+							0,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							3,
+							2,
+							1,
+							0,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							3,
+							2,
+							1,
+							1,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							3,
+							2,
+							1,
+							1,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							3,
+							2,
+							1,
+							1,
+							1,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							3,
+							2,
+							1,
+							1,
+							1,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							3,
+							2,
+							1,
+							1,
+							1,
+							1
+						],
+						[
+							4,
+							3,
+							3,
+							3,
+							3,
+							1,
+							1,
+							1,
+							1
+						],
+						[
+							4,
+							3,
+							3,
+							3,
+							3,
+							2,
+							1,
+							1,
+							1
+						],
+						[
+							4,
+							3,
+							3,
+							3,
+							3,
+							2,
+							2,
+							1,
+							1
+						]
+					]
+				}
+			],
+			"classFeatures": [
+				"Spellcasting|Seeker|driftvvoodSeeker|1",
+				"Rites|Seeker|driftvvoodSeeker|1",
+				{
+					"classFeature": "Mavenhood|Seeker|driftvvoodSeeker|1",
+					"gainSubclassFeature": true
+				},
+                "Tea Leaves|Seeker|driftvvoodSeeker|1",
+				"Premonition|Seeker|driftvvoodSeeker|2",
+				{
+					"classFeature": "Maven Feature|Seeker|driftvvoodSeeker|3",
+					"gainSubclassFeature": true
+				},
+                "Ability Score Improvement|Seeker|driftvvoodSeeker|4",
+				"Destined Strike|Seeker|driftvvoodSeeker|6",
+                "Omen|Seeker|driftvvoodSeeker|7",
+				"Ability Score Improvement|Seeker|driftvvoodSeeker|8",
+				{
+					"classFeature": "Maven Feature|Seeker|driftvvoodSeeker|10",
+					"gainSubclassFeature": true
+				},
+                "Hold Fast|Seeker|driftvvoodSeeker|10",
+				"Ability Score Improvement|Seeker|driftvvoodSeeker|12",
+				{
+					"classFeature": "Maven Feature|Seeker|driftvvoodSeeker|14",
+					"gainSubclassFeature": true
+				},
+				"Ability Score Improvement|Seeker|driftvvoodSeeker|16",
+                "Endless Pursuit|Seeker|driftvvoodSeeker|18",
+				"Ability Score Improvement|Seeker|driftvvoodSeeker|19",
+				"Divine Vision|Seeker|driftvvoodSeeker|20"
+			],
+			"subclassTitle": "Hood",
+			"classSpells": [
+                "booming blade|tce",
+                "chill touch",
+                "control flames|xge",
+                "friends",
+                "green-flame blade|tce",
+                "guidance",
+                "gust|xge",
+                "light",
+                "mage hand",
+                "mending",
+                "message",
+                "mind sliver|tce",
+                "minor illusion",
+                "mold earth|xge",
+                "prestidigitation",
+                "ray of frost",
+                "sacred flame",
+                "shape water|xge",
+                "shocking grasp",
+                "thaumaturgy",
+                "true strike",
+                "absorb elements|xge",
+                "alarm",
+                "animal fiendship",
+                "bless",
+                "ceremony|xge",
+                "comprehend languages",
+                "detect evil and good",
+                "detect magic",
+                "detect poison and disease",
+                "disguise self",
+                "ensnaring strike",
+                "false life",
+                "feather fall",
+                "find familiar",
+                "gift of alacrity|egw",
+                "guiding bolt",
+                "hunter's mark",
+                "identify",
+                "inflict wounds",
+                "longstrider",
+                "purify food and drink",
+                "sanctuary",
+                "shield",
+                "silent image",
+                "silvery barbs|scc",
+                "unseen servant",
+                "zephyr strike|xge",
+                "alter self",
+                "arcanist's magic aura",
+                "augury",
+                "beast sense",
+                "blindness/deafness",
+                "borrowed knowledge|scc",
+                "branding smite",
+                "darkness",
+                "darkvision",
+                "detect thoughts",
+                "enhance ability",
+                "enlarge/ reduce",
+                "find traps",
+                "fortune's favor",
+                "immovable object|egw",
+                "invisibility",
+                "kinetic jaunt|scc",
+                "knock",
+                "lesser restoration",
+                "levitate",
+                "locate animals or plants",
+                "locate object",
+                "mind spike|xge",
+                "misty step",
+                "pass without trace",
+                "prayer of healing",
+                "see invisibility",
+                "silence",
+                "spider climb",
+                "suggestion",
+                "warding bond",
+                "wristpocket|egw",
+                "vortex warp|scc",
+                "beacon of hope",
+                "bestow curse",
+                "clairvoyance",
+                "counterspell",
+                "create food and water",
+                "dispel magic",
+                "fly",
+                "galder's tower|llk",
+                "gaseous form",
+                "haste",
+                "intellect fortress",
+                "magic circle",
+                "major image",
+                "nondetection",
+                "phantom steed",
+                "plant growth",
+                "remove curse",
+                "sending",
+                "speak with dead",
+                "speak with plants",
+                "spirit shroud|tce",
+                "thunder step|xge",
+                "tiny hut",
+                "tiny servant|xge",
+                "tongues",
+                "water breathing",
+                "water walk",
+                "arcane eye",
+                "aura of purity",
+                "banishment",
+                "control water",
+                "death ward",
+                "dimension door",
+                "divination",
+                "fabricate",
+                "freedom of movement",
+                "greater invisibility",
+                "hallucinatory terrain",
+                "locate creature",
+                "private sanctum",
+                "psychic lance",
+                "speedy courier|llk",
+                "stone shape",
+                "commune",
+                "commune with nature",
+                "contact other plane",
+                "control winds|xge",
+                "dispel evil and good",
+                "dream",
+                "greater restoration",
+                "legend lore",
+                "modify memory",
+                "passwall",
+                "reincarnate",
+                "scrying",
+                "seeming",
+                "skill empowerment|xge",
+                "telekinesis",
+                "telepathic bond",
+                "teleportation circle",
+                "temporal shunt",
+                "transmute rock|xge",
+                "wall of stone",
+                "arcane gate",
+                "contingency",
+                "disintegrate",
+                "find the path",
+                "forbiddence",
+                "heroes' feast",
+                "move earth",
+                "otherworldly guise|tce",
+                "scatter|xge",
+                "soul cage|xge",
+                "transport via plants",
+                "true seeing",
+                "wind walk",
+                "word of recall",
+                "dream of the blue veil|tce",
+                "etherealness",
+                "forcecage",
+                "plane shift",
+                "sequester",
+                "similacrum",
+                "symbol",
+                "teleport",
+                "temple of the gods|xge",
+                "antimagic field",
+                "antipathy/sympathy",
+                "demiplane",
+                "glibness",
+                "holy aura",
+                "maze",
+                "mighty fortress|xge",
+                "telepathy",
+                "foresight",
+                "gate",
+                "shapechange",
+                "time stop",
+                "true polymorph"
+			],
+			"fluff": [
+				{
+					"type": "section",
+					"name": "The Seeker",
+					"source": "driftvvoodSeeker",
+					"page": 2,
+					"entries": [
+						"{@i Under the cover of darkness, her picks dance through the lock in the blink of an eye with fingers deft from a prior enchantment. 'Only your light can snuff out the dark' were the words that brought her here, guided by her dreams. Recognizing and avoiding the pressure plate immediately behind the door was easier than she thought, infiltrating the Clockwork Halls in Darken City was the hard part, but she did her best work in the shadows. Sorcery bars the last door between the woman and her prey; a quick word and a gesture and the heretic's barrier spell is ravaged. The burnt bones and stars had shown her his home. The words that guided her blade ringed clearly in her head as she crept towards the heretic's sleeping form. Her knife pulsed with energy, poised high above the false prophet, the spell of silence would handle her next problem...}",
+                        "{@i Having built a barricade, the bloodied warrior catches their breath while the harried priest tends to the unconscious mage, the fourth adventurer, as battered as he is, pulls out his teapot. “Is this really the time for that?” the warrior says, a slight tremble to their voice. Lighting a fire, the seeker doesn’t look up as he continues to rummage in his bag, “if you prefer to get out of this in one piece, then just keep them at bay, this brew will fix everything.” The tea leaves glow with a brilliant green light as the water comes to a boil. A smirk comes across the seeker’s face “I just wish we could see the look on their faces...}",
+                        "{@i A dream stirs the elf to waken, “a storm is coming and our quarry’s tracks will be lost” they announce as the hint of clouds begin to form in the east. The group grumbles as they begin to break camp, but know better than to question the visions of their elf companion.}",
+						{
+							"type": "entries",
+							"name": "Divine Guidance",
+							"page": 2,
+							"entries": [
+								"To be a seeker is to be on a mission given out by a higher being. Maybe an angel appears in visions or the seeker is able to hear the whispers of a Prince of Hell, seekers follow a divine path. Although a seeker’s mission varies, most commonly they are looking for someone, a person of importance to their deity such as a prophet, muse, or even an avatar of another god. Unlike a paladin or cleric who may follow the tenets of a god and lead others in that religion, a seeker is given guidance by their deity.",
+                                "Through study of subtle signs and interpretation of omens and symbols that most would miss, a seeker’s path is laid before them. The tasks that seekers are given may be devoid of how to complete them, thus a seeker must be adept at gathering intelligence. Seekers care not where their information comes from, whether guidance gifted by the divine, the knowledge still held by the dead, or simply by charming those that would otherwise hoard secrets; by any means will they uncover the path laid before them."
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Find a Way or Make One",
+							"page": 2,
+							"entries": [
+								"A seeker moves through the world with ease, adept at traveling quickly over the roughest of terrain. As such, a seeker needs to be an expert at infiltrating the toughest to reach places; they spring locks, recognize traps, and can work with the tools around them to get past the clockwork mechanisms common to this world.",
+                                "Not nearly to the level of an artificer’s mastery over all things mechanical and crafted, but similar to their other skills, seekers use magic to make up for their lack in certain areas."
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Magically Enhanced",
+							"page": 2,
+							"entries": [
+								"The skills a seeker possesses are minor compared to what they have trained for. A seeker uses their body as a vessel for empowering magics, allowing their spells to change how their own form functions. Because of this training, they more often rely not on talent, but instead on the use of magic to make up what is lacking. Continuing this line of thinking, seekers often rely on others to get through difficult situations, a wise seeker is aware that they cannot handle every situation thrown their way.",
+                                "Seekers should be able to work well with their fellow companions to accomplish the goals set before them by their patron, as such a seeker’s spells lean towards improving their gifts and the group rather than blatantly destructive magics."
+							]
+						},
+                        {
+							"type": "entries",
+							"name": "Creating a Seeker",
+							"page": 3,
+							"entries": [
+								"When creating a seeker, consider what kind of deity you follow and quest for. What kind of training did you go through to become a seeker? How does your patron or god communicate with you and how do you read their omens? Will you aid your allies in combat with supportive magics or empower your own abilities to take down your foes? Be sure to work with the DM about your background."
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Quick Build",
+							"page": 3,
+							"entries": [
+								"You can make a Seeker quickly by following these suggestions. First, make either Dexterity or Intelligence your highest ability score, followed by Constitution. Second, choose the {@background investigator} or {@background sage} background."
+							]
+						}
+					]
+				}
+			],
+			"cantripProgression": [
+				3,
+				3,
+				3,
+				4,
+				4,
+				4,
+				4,
+				4,
+				4,
+				5,
+				5,
+				5,
+				5,
+				5,
+				5,
+				5,
+				5,
+				5,
+				5,
+				5
+			],
+            "foundryImg": "icons/magic/perception/orb-crystal-ball-scrying.webp"
+		}
+	],
+	"classFeature": [
+		{
+			"name": "Spellcasting",
+			"source": "driftvvoodSeeker",
+			"className": "Seeker",
+			"classSource": "driftvvoodSeeker",
+			"page": 4,
+			"level": 1,
+			"entries": [
+				"Through your studies of the divine and unseen, you are able to use magic spells. As a seeker, your magic is more patient than others, but creativity is your true power. See Spells Rules for the general rules of spellcasting.",
+				{
+					"type": "entries",
+					"name": "Cantrips",
+					"page": 4,
+					"entries": [
+						"At 1st level, you know three cantrips of your choice from the seeker spell list. At higher levels, you learn additional seeker cantrips of your choice, as shown in the Cantrips Known column of the seeker table.",
+                        "When you gain a level in this class, you can replace one of the seeker cantrips you know with another cantrip from the {@filter Seeker spell list|spells|class=Seeker (D:S)}."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Preparing and Casting Spells",
+					"page": 4,
+					"entries": [
+						"The seeker table shows how many spell slots you have per spell level to cast your seeker spells. To cast one of your seeker spells of 1st level or higher at the regular casting time, you must expend a spell slot of the spell’s level or higher. You regain all expended spell slots when you finish a long rest.",
+                        "You prepare a list of spells at the end of each long rest from the seeker spell list. When you do so, choose a number of spells equal to your Intelligence modifier + half your seeker level, rounded down (minimum of one spell). The spells must be of a level for which you are able to cast. These spells count as seeker spells for purposes of spellcasting and Rites.",
+                        "You can change your list of prepared spells when you finish a long rest. Preparing a new list of seeker spells requires time spent in studying omens from the divine and interpreting the meaning of these signs: at least 1 minute per spell level for each spell on your list."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Spellcasting Ability",
+					"page": 4,
+					"entries": [
+						"Intelligence is your spellcasting ability for your seeker spells, since you learn your spells through dedicated Maven and memorization. You use your Intelligence whenever a spell refers to your spellcasting ability. In addition, you use your Intelligence modifier when setting the saving throw DC for a seeker spell you cast and when making an attack roll with one.",
+						{
+							"type": "abilityDc",
+							"name": "Spell",
+							"attributes": [
+								"int"
+							]
+						},
+						{
+							"type": "abilityAttackMod",
+							"name": "Spell",
+							"attributes": [
+								"int"
+							]
+						}
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Ritual Casting",
+					"page": 4,
+					"entries": [
+						"You can cast any Seeker spell you know as a ritual if that spell has the ritual tag."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Spellcasting Focus",
+					"page": 4,
+					"entries": [
+						"You can use a divine focus as a spellcasting focus for your seeker spells. This divine focus can be your fortune-telling device.."
+					]
+				}
+			],
+            "foundryImg": "icons/magic/holy/barrier-shield-winged-blue.webp"
+		},
+        {
+			"name": "Rites",
+			"source": "driftvvoodSeeker",
+			"className": "Seeker",
+			"classSource": "driftvvoodSeeker",
+			"level": 1,
+			"resources": [
+                {
+                    "name": "Total Rites",
+                    "type": "dicePool",
+                    "count": "<$level$>",
+                    "number": 1,
+                    "faces": 1,
+                    "recharge": "restLong"
+                }
+            ],
+			"entries": [
+				"Rites may be used for casting spells or, as discussed later, may be spent for specific seeker abilities. You regain all expended Rites when you finish a long rest. For a Rite to be used to cast a spell, the spell must be available to be prepared by you and be lower than 6th level.",
+                "For any spell prepared, you are able to cast those spells as Rites instead of using a spell slot. The rules for casting spells this way follows the format of rituals, except that the casting time equals the standard casting time plus 1 minute instead of an additional 10 minutes.",
+                "You may also cast unprepared spells by spending the amount of Rites needed to cast that level of spell and adding 10 minutes to the casting time.",
+                "Spells cast using a Rite have an associated cost depending on what spell is being cast, as seen in the table below.",
+                {
+					"type": "table",
+					"colLabels": [
+						"Spell Level",
+						"Rites Used"
+					],
+					"colStyles": [
+						"col-6 text-center",
+						"col-6"
+					],
+					"rows": [
+						[
+							"1st & 2nd",
+							"1"
+						],
+						[
+							"3rd & 4th",
+							"2"
+						],
+						[
+							"5th",
+							"3"
+						]
+					]
+				}
+			],
+            "foundryImg": "icons/sundries/gaming/playing-cards-grey.webp"
+		},
+        {
+			"name": "Mavenhood",
+			"className": "Seeker",
+			"classSource": "driftvvoodSeeker",
+			"level": 1,
+			"page": 4,
+			"source": "driftvvoodSeeker",
+			"entries": [
+				"Choose a Mavenhood related to how you will best serve your patron, detailed at the end of the class description. Your choice grants you Maven spells and features when you choose it at 1st level and additional benefits at 3rd, 10th, and 14th level.",
+                {
+					"name": "Maven Spells",
+					"type": "entries",
+					"entries": [
+						"Each Mavenhood has a list of spells, its Maven spells, that you gain at the Seeker levels noted in the Maven description. Once you gain a Maven spell, you always have it prepared, and it doesn't count against the number of spells you can prepare each day. If you have a Maven spell that doesn't appear on the Seeker spell list, the spell is nonetheless a Seeker spell for you."
+					]
+				}
+			]
+		},
+		{
+			"name": "Tea Leaves",
+			"source": "driftvvoodSeeker",
+			"className": "Seeker",
+			"classSource": "driftvvoodSeeker",
+			"level": 1,
+            "page": 6,
+			"entries": [
+				"At 1st level, you have studied the greater arcanum enough to know which omens should receive attention and which can be cast aside. You have advantage on ability checks to interpret signs of good and ill omens.",
+                "Additionally, the fortunes you utter hold power. When casting a spell, the verbal component of that spell may be replaced by stating a prediction, prophecy, or omen of things to come."
+			],
+            "foundryImg": "icons/consumables/plants/olive-leaf-stem-green.webp"
+		},
+        {
+			"name": "Premonition",
+			"source": "driftvvoodSeeker",
+			"className": "Seeker",
+			"classSource": "driftvvoodSeeker",
+			"level": 2,
+            "page": 6,
+			"entries": [
+				"At 2nd level, you may spend a Rite (no action required) to gain a glimpse of what is to come, what is hidden, and how to conceal yourself. Until the end of your next turn, you may use the Hide or Search actions as bonus actions and you may add a d4 to all ability checks and saving throws.",
+                "This feature can be activated after an ability check or saving throw but not before finding out if you succeed or fail. When you are 12th level seeker, your Premonition die becomes a d6, and a d8 at 16th level."
+			],
+            "resources": [
+                {
+                    "name": "Premonitions (d4)",
+                    "type": "dicePool",
+                    "number": 1,
+                    "faces": 4,
+                    "count": 1
+                }
+            ],
+            "foundryImg": "icons/magic/perception/eye-ringed-glow-angry-teal.webp"
+		},
+        {
+			"name": "Maven Feature",
+			"source": "driftvvoodSeeker",
+			"className": "Seeker",
+			"classSource": "driftvvoodSeeker",
+			"page": 4,
+			"level": 3,
+			"entries": [
+				"At 6th level, you gain a feature granted by your Maven."
+			]
+		},
+		{
+			"name": "Ability Score Improvement",
+			"source": "driftvvoodSeeker",
+			"className": "Seeker",
+			"classSource": "driftvvoodSeeker",
+			"page": 6,
+			"level": 4,
+			"entries": [
+				"When you reach 4th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+				"If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."
+			]
+		},
+		{
+			"name": "Destined Strike",
+			"className": "Seeker",
+			"classSource": "driftvvoodSeeker",
+			"level": 6,
+			"page": 6,
+			"source": "driftvvoodSeeker",
+			"entries": [
+				"At 6th level, you feel as if your hand is guided to better defeat your foes. After using your action to cast a cantrip, you can either make one weapon attack or roll an extra damage die once from that cantrip and add it to the total damage."
+			],
+            "expertise": [
+                {
+                    "anyProficientSkill": 1
+                }
+            ],
+            "foundryImg": "icons/skills/targeting/crosshair-triple-strike-orange.webp"
+		},
+		{
+			"name": "Omen",
+			"className": "Seeker",
+			"classSource": "driftvvoodSeeker",
+			"level": 7,
+			"page": 6,
+			"source": "driftvvoodSeeker",
+			"entries": [
+				"At 7th level, once with each use of your Premonition feature, you may grant a good or ill omen, twisting fate as you see fit. If a creature you can see within 90 feet of you makes an ability check or attack roll, before the DM reveals the outcome, you may add or subtract an amount equal to your Intelligence modifier to the total.",
+                "Additionally, you may take the Hide or Search actions as bonus actions without using Premonition."
+			],
+            "foundryImg": "icons/skills/targeting/crosshair-triple-strike-orange.webp"
+		},
+		{
+			"name": "Ability Score Improvement",
+			"source": "driftvvoodSeeker",
+			"className": "Seeker",
+			"classSource": "driftvvoodSeeker",
+			"page": 6,
+			"level": 8,
+			"entries": [
+				"When you reach 8th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+				"If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."
+			]
+		},
+		{
+			"name": "Maven Feature",
+			"className": "Seeker",
+			"classSource": "driftvvoodSeeker",
+			"level": 10,
+			"page": 4,
+			"source": "driftvvoodSeeker",
+			"entries": [
+				"At 10th level, you gain a feature granted by your Maven."
+			]
+		},
+        {
+			"name": "Hold Fast",
+			"className": "Seeker",
+			"classSource": "driftvvoodSeeker",
+			"level": 10,
+			"page": 6,
+			"source": "driftvvoodSeeker",
+			"entries": [
+				"Beginning at 10th level, with foresight, you gird your body to withstand harm. When you are affected by certain area effects, such as a white dragon's freezing breath or a {@spell cloudkill} spell's poison gases, if you succeed on a Constitution saving throw to take half damage, you take no damage. If you fail, you take half damage."
+			],
+            "foundryImg": "icons/magic/defensive/barrier-shield-dome-pink.webp"
+		},
+		{
+			"name": "Ability Score Improvement",
+			"source": "driftvvoodSeeker",
+			"className": "Seeker",
+			"classSource": "driftvvoodSeeker",
+			"page": 6,
+			"level": 12,
+			"entries": [
+				"When you reach 12th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+				"If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."
+			]
+		},
+		{
+			"name": "Maven Feature",
+			"className": "Seeker",
+			"classSource": "driftvvoodSeeker",
+			"level": 14,
+			"page": 4,
+			"source": "driftvvoodSeeker",
+			"entries": [
+				"At 14th level, you gain a feature granted by your Maven."
+			]
+		},
+		{
+			"name": "Ability Score Improvement",
+			"source": "driftvvoodSeeker",
+			"className": "Seeker",
+			"classSource": "driftvvoodSeeker",
+			"page": 6,
+			"level": 16,
+			"entries": [
+				"When you reach 16th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+				"If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."
+			]
+		},
+		{
+			"name": "Endless Pursuit",
+			"className": "Seeker",
+			"classSource": "driftvvoodSeeker",
+			"level": 18,
+			"page": 6,
+			"source": "driftvvoodSeeker",
+			"entries": [
+				"At 18th level, magic suffuses your every step. You have advantage on saving throws against magical effects that would reduce or take away your movement speed, such as the {@spell slow} spell or saving against being stunned. You cannot be restrained. By spending 5 feet of movement, you can automatically escape being grappled.",
+                "Additionally, if you pass beyond this mortal veil and die, your deity wills you back from death with 1 hit point; you cannot be returned to life again until 1d4+3 days has passed."
+			],
+            "conditionImmune": [
+                "restrained"
+            ],
+            "foundryImg": "icons/skills/movement/feet-bladed-boots-fire.webp"
+		},
+		{
+			"name": "Ability Score Improvement",
+			"source": "driftvvoodSeeker",
+			"className": "Seeker",
+			"classSource": "driftvvoodSeeker",
+			"page": 6,
+			"level": 19,
+			"entries": [
+				"When you reach 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+				"If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."
+			]
+		},
+		{
+			"name": "Divine Vision", 
+			"className": "Seeker",
+			"classSource": "driftvvoodSeeker",
+			"level": 20,
+			"page": 6,
+			"source": "driftvvoodSeeker",
+			"entries": [
+				"When you reach 20th level, you are able to forsee how best to serve your deity by choosing a blessing. Thrice per long rest you may reroll either an ability check or a saving throw after rolling but before the DM reveals the outcome. Additionally, choose from one of the blessings below. You carry this blessing until it is expended or you finish your next long rest.",
+                "Dragon's Brawn: You may add your Premonition die to your attack rolls and you add 5 damage to each melee or ranged attack.",
+                "Fey's Grace: Your walking speed increases by 30 and do not take fall damage when falling from 100 feet or less as long as you aren't incapcitated.",
+                "Elder One's Endurance: You gain 30 temporary hit points.",
+                "Lich's Cunning: Your Premonition die becomes a d12.",
+                "Angel's Insight: You have Truesight out to 15 feet.",
+                "Devil's Charm: You can ignore the verbal and somatic components thrice when casting a spell."
+			]
+		}
+	],
+	"subclassFeature": [
+		{
+			"name": "Maven of the All-Seeing Eye",
+			"source": "driftvvoodSeeker",
+			"className": "Seeker",
+			"classSource": "driftvvoodSeeker",
+			"subclassSource": "driftvvoodSeeker",
+			"subclassShortName": "allSeeingEye",
+			"page": 7,
+			"level": 1,
+			"entries": [
+				"All-seeing Eye seekers see the world for how it truly is, beyond what most can visualize. Common among this Mavenhood are strange, discomforting eyes which they use to visualize auras, look into crystal balls, and see patterns in burned incense to tell fortunes and read omens.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "All-Seeing Eye Spells|Seeker|driftvvoodSeeker|allSeeingEye|driftvvoodSeeker|1"
+				},
+                {
+					"type": "refSubclassFeature",
+					"subclassFeature": "Third Eye|Seeker|driftvvoodSeeker|allSeeingEye|driftvvoodSeeker|1"
+				}
+			]
+		},
+		{
+			"name": "All-Seeing Eye Spells",
+			"source": "driftvvoodSeeker",
+			"className": "Seeker",
+			"classSource": "driftvvoodSeeker",
+			"subclassSource": "driftvvoodSeeker",
+			"subclassShortName": "allSeeingEye",
+			"page": 7,
+			"level": 1,
+			"header": 1,
+			"entries": [
+				"When choosing this Mavenhood, you gain access to spells that help you see and reveal what is hidden. At 1st, 3rd, 5th, 7th, and 9th level you always prepare the following spells.",
+                {
+					"type": "table",
+					"caption": "Expanded Spell List",
+					"colLabels": [
+						"Seeker Level",
+						"Maven Spell"
+					],
+					"colStyles": [
+						"col-3 text-center",
+						"col-9"
+					],
+					"rows": [
+						[
+							"1st",
+							"{@spell faerie fire}, {@spell guiding bolt}"
+						],
+						[
+							"2nd",
+							"{@spell darkvision}, {@spell see invisibility}"
+						],
+						[
+							"3rd",
+							"{@spell hypnotic pattern}, {@spell remove curse}"
+						],
+						[
+							"4th",
+							"{@spell arcane eye}, {@spell divination}"
+						],
+						[
+							"5th",
+							"{@spell commune}, {@spell scrying}"
+						]
+					]
+				}
+			]
+		},
+		{
+			"name": "Third Eye",
+			"source": "driftvvoodSeeker",
+			"className": "Seeker",
+			"classSource": "driftvvoodSeeker",
+			"subclassSource": "driftvvoodSeeker",
+			"subclassShortName": "allSeeingEye",
+			"page": 7,
+			"level": 1,
+			"header": 2,
+			"entries": [
+				"When you choose this Mavenhood, you have advantage on ability checks when specifically searching for hidden traps and doors.",
+                "Additionally, you gain proficiency in either Perception or Investigation. At 6th level, you can choose a skill that you are proficient with to add double your proficiency bonus to checks you make with it."
+			],
+            "skillProficiencies": [
+                {
+                    "choose": {
+                        "from": [
+                            "investigation",
+                            "perception"
+                        ],
+                        "count": 1
+                    }
+                }
+            ]
+		},
+        {
+			"name": "Stolen Glances",
+			"source": "driftvvoodSeeker",
+			"className": "Seeker",
+			"classSource": "driftvvoodSeeker",
+			"subclassSource": "driftvvoodSeeker",
+			"subclassShortName": "allSeeingEye",
+			"page": 7,
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"At 3rd level, you may cast {@spell blindness/deafness}, attempting to blind only, three times per long rest."
+			],
+            "additionalSpells": [
+				{
+					"innate": {
+                        "3": {
+                            "daily":
+                            {
+                                "3e": [
+                                    "blindness/deafness"
+                                ]
+                            }
+                        }
+					}
+				}
+			]
+        },
+		{
+			"name": "Wandering Eye",
+			"source": "driftvvoodSeeker",
+			"className": "Seeker",
+			"classSource": "driftvvoodSeeker",
+			"subclassSource": "driftvvoodSeeker",
+			"subclassShortName": "allSeeingEye",
+			"page": 9,
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"Additionally at 3rd level, by either spending 1 minute focusing or by using a Rite as an action, you place a hand on an object or surface and create a single eye on the other side. It requires an action for you to create the eye initially and an action on each of your turns to lose all of your other senses and see through this eye. This eye shares your abilities to see, but cannot visualize anything past 60 feet. The eye can turn and rotate but cannot be moved otherwise.",
+                "Certain materials are more difficult to peer through than others, the eye is blocked by 1 foot of stone, 1 inch of common metal, a thin sheet of lead, or 3 feet of wood or dirt."
+			]
+		},
+		{
+			"name": "Second Sight", 
+			"source": "driftvvoodSeeker",
+			"className": "Seeker",
+			"classSource": "driftvvoodSeeker",
+			"subclassShortName": "allSeeingEye",
+			"subclassSource": "driftvvoodSeeker",
+			"level": 10,
+			"page": 7,
+			"header": 2,
+			"entries": [
+				"At 10th level, you have advantage on ability checks that rely on sight.",
+                "Additionally, you can use an action to increase your powers of perception. When you do so, choose one of the following benefits, which lasts until you are incapacitated, or you take a short or long rest. You can’t use the feature again until you finish a rest or use a Rite as an action to change the ability",
+                "{@b Tremorsense}: Gain tremorsense out to a range of 60 feet.",
+                "{@b Ethereal Sight}: You can see into the Ethereal Plane within 60 feet of you.",
+                "{@b Darkvision}: You can see through magical darkness to a range of 30 feet.",
+                "{@b See Invisibility}: You can see invisible creatures and objects within 10 feet of you that are within line of sight."
+			]
+		},
+		{
+			"name": "Cold Reading",
+			"source": "driftvvoodSeeker",
+			"className": "Seeker",
+			"classSource": "driftvvoodSeeker",
+			"subclassSource": "driftvvoodSeeker",
+			"subclassShortName": "allSeeingEye",
+			"page": 7,
+			"level": 14,
+			"header": 2,
+			"entries": [
+				"At 14th level, twice per short rest, you may use a bonus action to visualize a creature’s aura. When you do so you learn if they are {@i Healthy} (at their full hit points), {@i Harmed} (less than their full hit points), or {@i Fragile} (less than 15 hit points). When you visualize a creature’s aura in this manner, you may take an action on each of your turns to focus on the that target, learning one piece of information each turn:",
+                {
+                "type": "list",
+                    "items": [
+                        "If the target is cursed and the nature of that curse.",
+                        "What abilities are their highest and lowest saves.",
+                        "What is the highest level of spell they can use, if any.",
+                        "A fear, secret, or major motivation that creature has (DM's choice, limit once per Cold Reading).",
+                        "If the target would be friendly, hostile, or neutral to you if you greeted them in a common fashion."
+                    ]
+                }
+			]
+		},
+        {
+			"name": "Sight Beyond Sight",
+			"source": "driftvvoodSeeker",
+			"className": "Seeker",
+			"classSource": "driftvvoodSeeker",
+			"subclassSource": "driftvvoodSeeker",
+			"subclassShortName": "allSeeingEye",
+			"page": 7,
+			"level": 14,
+			"header": 2,
+			"entries": [
+				"Also at 14th level, you gain truesight out to 15 feet. When you cast divination spells that allow you to see other places, such as scrying or clairvoyance, your sensor has truesight, as well."
+			]
+		},
+		{
+			"name": "Maven of the Bitter Heart",
+			"source": "driftvvoodSeeker",
+			"className": "Seeker",
+			"classSource": "driftvvoodSeeker",
+			"subclassSource": "driftvvoodSeeker",
+			"subclassShortName": "bitterHeart",
+			"page": 8,
+			"level": 1,
+			"entries": [
+				"Most often mistaken for witches, due to their penchant for curses and animal companions. Seekers within this Mavenhood use their summoned companions to predict the future such as by staring into their eyes or listening to the chirps and chitterings.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Bitter Heart Spells|Seeker|driftvvoodSeeker|bitterHeart|driftvvoodSeeker|1"
+				},
+                {
+					"type": "refSubclassFeature",
+					"subclassFeature": "Heartbeats|Seeker|driftvvoodSeeker|bitterHeart|driftvvoodSeeker|1"
+				}
+			]
+		},
+		{
+			"name": "Bitter Heart Spells",
+			"source": "driftvvoodSeeker",
+			"className": "Seeker",
+			"classSource": "driftvvoodSeeker",
+			"subclassSource": "driftvvoodSeeker",
+			"subclassShortName": "bitterHeart",
+			"page": 8,
+			"level": 1,
+			"header": 1,
+			"entries": [
+				"When choosing this Mavenhood, you gain access to spells that help you see and reveal what is hidden. At 1st, 3rd, 5th, 7th, and 9th level you always prepare the following spells.",
+                {
+					"type": "table",
+					"caption": "Expanded Spell List",
+					"colLabels": [
+						"Seeker Level",
+						"Maven Spell"
+					],
+					"colStyles": [
+						"col-3 text-center",
+						"col-9"
+					],
+					"rows": [
+						[
+							"1st",
+							"{@spell animal friendship}, {@spell hex}"
+						],
+						[
+							"2nd",
+							"{@spell beast sense}, {@spell blindness/deafness}"
+						],
+						[
+							"3rd",
+							"{@spell bestow curse}, {@spell speak with plants}"
+						],
+						[
+							"4th",
+							"{@spell charm monster}, {@spell phantasmal killer}"
+						],
+						[
+							"5th",
+							"{@spell contagion}, {@spell geas}"
+						]
+					]
+				}
+			]
+		},
+		{
+			"name": "Heartbeats",
+			"source": "driftvvoodSeeker",
+			"className": "Seeker",
+			"classSource": "driftvvoodSeeker",
+			"subclassSource": "driftvvoodSeeker",
+			"subclassShortName": "bitterHeart",
+			"page": 8,
+			"level": 1,
+			"header": 2,
+			"entries": [
+				"When you choose this Mavenhood, you gain proficiency in Animal Handling and one of the following skills: Arcana, Medicine, or Nature. At 6th level, you can double your proficiency bonus in either one of the two skills you gained from this feature at 1st level."
+			],
+            "skillProficiencies": [
+                {
+                    "animal handling": true,
+                    "choose": {
+                        "from": [
+                            "arcana",
+                            "medicine",
+                            "nature"
+                        ],
+                        "count": 1
+                    }
+                }
+            ]
+		},
+        {
+			"name": "Spite",
+			"source": "driftvvoodSeeker",
+			"className": "Seeker",
+			"classSource": "driftvvoodSeeker",
+			"subclassSource": "driftvvoodSeeker",
+			"subclassShortName": "bitterHeart",
+			"page": 8,
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"At 3rd level, woe to those that harm you or yours. When you or an ally take damage from a creature you can see, you may use a reaction and expend a Rite to place a curse on the attacking creature.",
+                "For the next minute, you know their exact location and your Premonition rolls are doubled when rolling an opposed ability check or save against the target of Spite. While Spite is active, on your turn choose one of the following effects against the cursed:",
+                "{@i Bewilder}. The first attack they make is done with disadvantage.",
+                "{@i Bleed}. The target takes necrotic damage equal to your seeker level from the next source of damage.",
+                "{@i Hunted}. If the target is hidden from you, you can see where they are until the start of your next turn unless they are behind full cover.",
+                "{@i Rust}. If the target would normally be immune to a type of damage, until the start of your next turn they instead have resistance to that damage."
+			]
+        },
+		{
+			"name": "Wild Hatred",
+			"source": "driftvvoodSeeker",
+			"className": "Seeker",
+			"classSource": "driftvvoodSeeker",
+			"subclassSource": "driftvvoodSeeker",
+			"subclassShortName": "bitterHeart",
+			"page": 8,
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"Also at 3rd level, nature hears your call when you have been wronged. Once per short rest when a creature is under the effect of your Spite feature, you may cast the spell {@spell summon beast|tce} without using a spell slot. Once per long rest, when you cast {@spell summon beast|tce} in this way you can choose to have it not require concentration.",
+                "In addition, when you use this feature, instead of casting the spell at its lowest level without using a spell slot, you may cast {@spell summon beast|tce} at a higher level by using one of your spell slots of the appropriate level and following all the normal rules of spell casting."
+			],
+            "additionalSpells": [
+				{
+					"innate": {
+						"3": {
+							"daily": {
+								"1e": [
+									"summon beast|tce"
+								]
+							}
+						}
+					}
+				}
+			]
+		},
+		{
+			"name": "Coven", 
+			"source": "driftvvoodSeeker",
+			"className": "Seeker",
+			"classSource": "driftvvoodSeeker",
+			"subclassShortName": "bitterHeart",
+			"subclassSource": "driftvvoodSeeker",
+			"level": 10,
+			"page": 8,
+			"header": 2,
+			"entries": [
+				"By 10th level, your trust in others binds you to them, letting your power flow through them. A number of times per long rest equal to your proficiency bonus, choose a humanoid ally that you can see and cast a spell with a casting time of one action using a spell slot; that creature may use their reaction to allow the magic to flow through them as if they had cast it, following all the other rules of spell casting and Intelligence is the casting stat for your ally. If that spell requires concentration, the chosen ally will be the one that concentrates on the spell.",
+                "Additionally, once per week, by spending 10 Rites and 10 hit dice, you may cast the spell {@spell awaken} without using components."
+			]
+		},
+		{
+			"name": "Hag's Hold",
+			"source": "driftvvoodSeeker",
+			"className": "Seeker",
+			"classSource": "driftvvoodSeeker",
+			"subclassSource": "driftvvoodSeeker",
+			"subclassShortName": "bitterHeart",
+			"page": 8,
+			"level": 14,
+			"header": 2,
+			"entries": [
+				"At 14th level, you may call upon more unusual friends. Once per long rest, you may cast any spell with the word {@i Summon} in its title at spell level 6. The chosen spell must normally take an action to cast and you must fulfill all other requirements of that spell such as components.",
+                "Additionally, when a creature under the effects of a curse you placed, such as hex or your Spite feature, you may use your reaction and expend a Rite prior to an ally making an attack either have that attack made with advantage or have the cursed target take double the damage rolled."
+			]
+		},
+        {
+			"name": "Maven of the Roaming Steps",
+			"source": "driftvvoodSeeker",
+			"className": "Seeker",
+			"classSource": "driftvvoodSeeker",
+			"subclassSource": "driftvvoodSeeker",
+			"subclassShortName": "roamingSteps",
+			"page": 15,
+			"level": 1,
+			"entries": [
+				"Getting there is half the battle, but a seeker who is a part of this Maven can make the journey easier and quicker. Reading the movement of stars, weather patterns, and swirling waters all lend themselves as divining tools for this Mavenhood.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Roaming Steps Spells|Seeker|driftvvoodSeeker|roamingSteps|driftvvoodSeeker|1"
+				},
+                {
+					"type": "refSubclassFeature",
+					"subclassFeature": "Wanderer|Seeker|driftvvoodSeeker|roamingSteps|driftvvoodSeeker|1"
+				}
+			],
+            "foundryImg": "icons/tools/navigation/compass-brass-blue-red.webp"
+		},
+		{
+			"name": "Roaming Steps Spells",
+			"source": "driftvvoodSeeker",
+			"className": "Seeker",
+			"classSource": "driftvvoodSeeker",
+			"subclassSource": "driftvvoodSeeker",
+			"subclassShortName": "roamingSteps",
+			"page": 15,
+			"level": 1,
+			"header": 1,
+			"entries": [
+				"When choosing this Mavenhood, you gain access to spells that help you travel your path and get there safely. At 1st, 3rd, 5th, 7th, and 9th level you always prepare the following spells.",
+                {
+					"type": "table",
+					"caption": "Expanded Spell List",
+					"colLabels": [
+						"Seeker Level",
+						"Maven Spell"
+					],
+					"colStyles": [
+						"col-3 text-center",
+						"col-9"
+					],
+					"rows": [
+						[
+							"1st",
+							"{@spell goodberry}, {@spell longstrider}"
+						],
+						[
+							"2nd",
+							"{@spell find steed}, {@spell misty step}, {@spell spider climb}"
+						],
+						[
+							"3rd",
+							"{@spell fly}, {@spell thunder step|xge}"
+						],
+						[
+							"4th",
+							"{@spell dimension door}, {@spell polymorph}"
+						],
+						[
+							"5th",
+							"{@spell far step|xge}, {@spell teleportation circle}"
+						]
+					]
+				}
+			],
+            "foundryImg": "icons/magic/movement/trail-streak-zigzag-yellow.webp"
+		},
+		{
+			"name": "Wanderer",
+			"source": "driftvvoodSeeker",
+			"className": "Seeker",
+			"classSource": "driftvvoodSeeker",
+			"subclassSource": "driftvvoodSeeker",
+			"subclassShortName": "roamingSteps",
+			"page": 15,
+			"level": 1,
+			"header": 2,
+			"entries": [
+				"When you choose this Mavenhood, you cannot become lost except by magical means.",
+                "Additionally, you gain proficiency in either Perception or Survival. At 6th level, you can choose a skill that you are proficient with to add double your proficiency bonus to checks you make with it."
+			],
+            "skillProficiencies": [
+                {
+                    "choose": {
+                        "from": [
+                            "perception",
+                            "survival"
+                        ],
+                        "count": 1
+                    }
+                }
+            ],
+            "expertise": [
+                {
+                     "anyProficientSkill": 1
+                }
+            ],
+            "is"
+            "foundryImg": "icons/environment/wilderness/terrain-river-road-gray.webp"
+		},
+        {
+			"name": "Transporter",
+			"source": "driftvvoodSeeker",
+			"className": "Seeker",
+			"classSource": "driftvvoodSeeker",
+			"subclassSource": "driftvvoodSeeker",
+			"subclassShortName": "roamingSteps",
+			"page": 15,
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"At 3rd level, you are able to move yourself and your allies quickly through danger. You have advantage on ability checks related to navigating and traveling to a distant destination. You also cannot be surprised while you are conscious."
+			],
+            "foundryImg": "icons/environment/wilderness/portal.webp"
+        },
+		{
+			"name": "Quick Shift",
+			"source": "driftvvoodSeeker",
+			"className": "Seeker",
+			"classSource": "driftvvoodSeeker",
+			"subclassSource": "driftvvoodSeeker",
+			"subclassShortName": "roamingSteps",
+			"page": 15,
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"Additionally at 3rd level, movement across shorter distances becomes your forte. As a bonus action, you teleport a creature you can see within 60 feet of you a number of feet equal to 5 times your proficiency bonus. If you teleport yourself, the distance you may teleport is doubled. If the creature you are teleporting is unwilling, they must make a Constitution save to avoid being teleported. To teleport yourself or another, the location must be a visible, unoccupied space on a surface or in a liquid that can support the target without the target having to squeeze.",
+                "You can use this feature a number of times per long rest equal to half your Seeker level or by using a Rite. If you use a Rite to use this feature and target an unwilling creature, that creature makes their Constitution saving throw with disadvantage."
+			],
+            "foundryImg": "icons/skills/movement/figure-running-gray.webp"
+		},
+		{
+			"name": "Master of Movement", 
+			"source": "driftvvoodSeeker",
+			"className": "Seeker",
+			"classSource": "driftvvoodSeeker",
+			"subclassShortName": "roamingSteps",
+			"subclassSource": "driftvvoodSeeker",
+			"level": 10,
+			"page": 15,
+			"header": 2,
+			"entries": [
+				"You may step in-and-out of reality to avoid harm. At 10th level, when rolling initiative, you may use two Rites to cast the spell {@spell blink} without using a spell slot.",
+                "Also, you may use your reaction at any time to move 30 feet a number of times per long rest equal to your proficiency bonus."
+			],
+            "foundryImg": "icons/skills/movement/feet-winged-boots-glowing-yellow.webp"
+		},
+		{
+			"name": "True Traveler",
+			"source": "driftvvoodSeeker",
+			"className": "Seeker",
+			"classSource": "driftvvoodSeeker",
+			"subclassSource": "driftvvoodSeeker",
+			"subclassShortName": "roamingSteps",
+			"page": 15,
+			"level": 14,
+			"header": 2,
+			"entries": [
+				"At 14th level, the spells you've lived with become ingrained in your being. By using three Rites when casting, you may cast a spell on your Roaming Steps prepared list without using concentration or using an action instead of the normal cast time.",
+                "Also at 14th level, you may cast either {@spell find the path}, {@spell phase shift}, {@spell scatter}, or {@spell teleport} once per long rest. For the purposes of spellcasting, you do not need the material components for using this feature."
+			],
+            "additionalSpells": [
+				{
+					"innate": {
+                        "14": {
+                            "daily":
+                            {
+                                "1": [
+                                    "find the path",
+                                    "plane shift",
+                                    "scatter|xge",
+                                    "teleport"
+                                ]
+                            }
+                        }
+					}
+				}
+			],
+            "foundryImg": "icons/magic/control/silhouette-hold-beam-blue.webp"
+		},
+        {
+            "name": "Maven of the Brightened Spirit",
+            "source": "driftvvoodSeeker",
+            "className": "Seeker",
+            "classSource": "driftvvoodSeeker",
+            "subclassSource": "driftvvoodSeeker",
+            "subclassShortName": "brightenedSpirit",
+            "page": 9,
+            "level": 1,
+            "entries": [
+                "Bringers of hope and renewal, the Mavens of the Brightened Spirit help lighten the darkest of times. Although all seekers tend towards darkness to hide their movements, Seekers that follow this Mavenhood focus on supporting the group. In this Mavenhood, many seekers gain their power and divine the future through seeing visions in a burning fire or by attaining a meditative state through energetic activities such as repetitive dances or deep breathing.",
+                {
+                    "type": "refSubclassFeature",
+                    "subclassFeature": "Brightened Spirit Spells|Seeker|driftvvoodSeeker|brightenedSpirit|driftvvoodSeeker|1"
+                },
+                {
+                    "type": "refSubclassFeature",
+                    "subclassFeature": "Fervor|Seeker|driftvvoodSeeker|brightenedSpirit|driftvvoodSeeker|1"
+                }
+            ]
+        },
+        {
+            "name": "Brightened Spirit Spells",
+            "source": "driftvvoodSeeker",
+            "className": "Seeker",
+            "classSource": "driftvvoodSeeker",
+            "subclassSource": "driftvvoodSeeker",
+            "subclassShortName": "brightenedSpirit",
+            "page": 9,
+            "level": 1,
+            "header": 1,
+            "entries": [
+                "When choosing this Mavenhood, you gain access to spells that bring the light to those around you, be they friend or foe. At 1st, 3rd, 5th, 7th, and 9th level you always prepare the following spells.",
+                {
+                    "type": "table",
+                    "caption": "Expanded Spell List",
+                    "colLabels": [
+                        "Seeker Level",
+                        "Maven Spell"
+                    ],
+                    "colStyles": [
+                        "col-3 text-center",
+                        "col-9"
+                    ],
+                    "rows": [
+                        [
+                            "1st",
+                            "{@spell bless}, {@spell healing word}"
+                        ],
+                        [
+                            "2nd",
+                            "{@spell calm emotions}, {@spell healing spirit|xge}"
+                        ],
+                        [
+                            "3rd",
+                            "{@spell daylight}, {@spell remove curse}, {@spell revivify}"
+                        ],
+                        [
+                            "4th",
+                            "{@spell aura of life}, {@spell guardian of faith}"
+                        ],
+                        [
+                            "5th",
+                            "{@spell dawn|xge}, {@spell greater restoration}, {@spell hallow}"
+                        ]
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Fervor",
+            "source": "driftvvoodSeeker",
+            "className": "Seeker",
+            "classSource": "driftvvoodSeeker",
+            "subclassSource": "driftvvoodSeeker",
+            "subclassShortName": "brightenedSpirit",
+            "page": 9,
+            "level": 1,
+            "header": 2,
+            "entries": [
+                "When you choose this Mavenhood, you gain proficiency in medium armor.",
+                "Additionally, you gain proficiency in either Medicine or Religion. At 6th level, choose a skill you are proficient in, add double your proficiency bonus to checks you make with it."
+            ],
+            "armorProficiencies": [
+                {
+                    "medium": true
+                }
+            ],
+            "skillProficiencies": [
+                {
+                    "choose": {
+                        "from": [
+                            "medicine",
+                            "religion"
+                        ],
+                        "count": 1
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Spirit of Holy Light",
+            "source": "driftvvoodSeeker",
+            "className": "Seeker",
+            "classSource": "driftvvoodSeeker",
+            "subclassSource": "driftvvoodSeeker",
+            "subclassShortName": "brightenedSpirit",
+            "page": 9,
+            "level": 3,
+            "header": 2,
+            "entries": [
+                "At 3rd level, you are blessed with a beneficent spirit from your patron. When casting {@spell healing spirit}, either with a spell slot and using a Rite or by using a Rite over the course of a minute, healing spirit changes, as below:",
+                {
+                    "type": "list",
+                        "items": [
+                            "The spirit appears in a form you choose that represents your deity.",
+                            "This spell doesn’t require concentration; it ends either after a minute has passed since casting it, it has healed a number of times equal to twice your proficiency bonus, when you choose (no action required), or you fall unconscious.",
+                            "When you cast this spell, choose either a skill or a save, when you heal someone with this spell, the healed target has advantage on that skill or save you chose until the spirit heals another target or the spell ends.",
+                            "Hostile creatures within a 10 foot radius of the Spirit cannot benefit from advantage on attacks or ability checks."
+                        ]
+                    }
+            ]
+        },
+        {
+            "name": "Blind Faith",
+            "source": "driftvvoodSeeker",
+            "className": "Seeker",
+            "classSource": "driftvvoodSeeker",
+            "subclassSource": "driftvvoodSeeker",
+            "subclassShortName": "brightenedSpirit",
+            "page": 9,
+            "level": 3,
+            "header": 2,
+            "entries": [
+                "Also at 3rd level, the elation you experience through your magics can be used to overwhelm your foes. Once per short rest, you may reroll any 1 rolled once per use of Premonition. When you reroll, you may also create a burst of light that blinds foes within 10 feet who fail a Constitution saving throw against your spell save DC until the end of your Premonition."
+            ]
+        },
+        {
+            "name": "Blessed Warmth", 
+            "source": "driftvvoodSeeker",
+            "className": "Seeker",
+            "classSource": "driftvvoodSeeker",
+            "subclassShortName": "brightenedSpirit",
+            "subclassSource": "driftvvoodSeeker",
+            "level": 10,
+            "page": 9,
+            "header": 2,
+            "entries": [
+                "At 10th level, you are able to call on your deity for additional aid in the form of an avatar. As the sun rises, whether you are able to see it or not, choose a target to be blessed. This target has advantage on saves against blindness and deafness as well as being poisoned and frightened.",
+                "Additionally, you learn the {@spell dancing lights} cantrip which does not count against your cantrip total. While concentrating on {@spell dancing lights}, you may spend two Rites as an action to end the cantrip early and cast either {@spell mass cure wounds} or {@spell destructive wave} centered on any point that your {@spell dancing lights} is active at. You may not use this feature again until you have finished a long rest."
+            ],
+            "additionalSpells": [
+                {
+                    "innate": {
+                        "-": [
+                            "dancing lights"
+                        ],
+                        "10": {
+                            "daily": {
+                                "1": [
+                                    "mass cure wounds",
+                                    "destructive wave"
+                                ]
+                            }
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Gift of the Martyr",
+            "source": "driftvvoodSeeker",
+            "className": "Seeker",
+            "classSource": "driftvvoodSeeker",
+            "subclassSource": "driftvvoodSeeker",
+            "subclassShortName": "brightenedSpirit",
+            "page": 9,
+            "level": 14,
+            "header": 2,
+            "entries": [
+                "At 14th level, when healing an ally using magical means, you can choose to spend your own hit dice to increase the healing you impart. Choose a number of your hit dice up to your proficiency bonus to increase the healing of one target you heal by 5 hit points for every hit dice spent this way.",
+                "Also at 14th level, you become a vessel for the light of your patron! Once per long rest, you may use three Rites to cast either divine word, heal, or sunbeam. When the spell ends, you cannot move or take actions until after your next turn, as you experience the elation of your deity's force moving through you."
+            ],
+            "additionalSpells": [
+                {
+                    "innate": {
+                        "14": {
+                            "daily": {
+                                "1": [
+                                    "divine word",
+                                    "heal",
+                                    "sunbeam"
+                                ]
+                            }
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Maven of the Burning Tongue",
+            "source": "driftvvoodSeeker",
+            "className": "Seeker",
+            "classSource": "driftvvoodSeeker",
+            "subclassSource": "driftvvoodSeeker",
+            "subclassShortName": "burningTongue",
+            "page": 10,
+            "level": 1,
+            "entries": [
+                "By asking the right questions, you can get to higher truths. By taking this Mavenhood, your questions carry more weight. Studying animal entrails and reading fire or ashes all lend themselves to omen reading for this Mavenhood.",
+                {
+                    "type": "refSubclassFeature",
+                    "subclassFeature": "Burning Tongue Spells|Seeker|driftvvoodSeeker|burningTongue|driftvvoodSeeker|1"
+                },
+                {
+                    "type": "refSubclassFeature",
+                    "subclassFeature": "Combat Training|Seeker|driftvvoodSeeker|burningTongue|driftvvoodSeeker|1"
+                }
+            ]
+        },
+        {
+            "name": "Burning Tongue Spells",
+            "source": "driftvvoodSeeker",
+            "className": "Seeker",
+            "classSource": "driftvvoodSeeker",
+            "subclassSource": "driftvvoodSeeker",
+            "subclassShortName": "burningTongue",
+            "page": 10,
+            "level": 1,
+            "header": 1,
+            "entries": [
+                "When choosing this Maven, you gain access to spells to stop your foes and find the truth between the lies. At 1st, 3rd, 5th, 7th, and 9th level you always prepare the following spells.",
+                {
+                    "type": "table",
+                    "caption": "Expanded Spell List",
+                    "colLabels": [
+                        "Seeker Level",
+                        "Maven Spell"
+                    ],
+                    "colStyles": [
+                        "col-3 text-center",
+                        "col-9"
+                    ],
+                    "rows": [
+                        [
+                            "1st",
+                            "{@spell command}, {@spell searing smite}"
+                        ],
+                        [
+                            "2nd",
+                            "{@spell flameblade}, {@spell zone of truth}"
+                        ],
+                        [
+                            "3rd",
+                            "{@spell ashardalon's stride|ftd}, {@spell tongues}"
+                        ],
+                        [
+                            "4th",
+                            "{@spell locate creature}, {@spell wall of fire}"
+                        ],
+                        [
+                            "5th",
+                            "{@spell dominate person}, {@spell holy weapon|xge}"
+                        ]
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Combat Training",
+            "source": "driftvvoodSeeker",
+            "className": "Seeker",
+            "classSource": "driftvvoodSeeker",
+            "subclassSource": "driftvvoodSeeker",
+            "subclassShortName": "burningTongue",
+            "page": 10,
+            "level": 1,
+            "header": 2,
+            "entries": [
+                "When you choose this Mavenhood, you gain proficiency with martial weapons and medium armor.",
+                "At 6th level, choose one of the skills you are proficient with, add double your proficiency bonus to checks you make with it."
+            ],
+            "armorProficiencies": [
+                {
+                    "medium": true
+                }
+            ],
+            "weaponProficiencies": [
+                {
+                    "martial": true
+                }
+            ]
+        },
+        {
+            "name": "Blessed Bond",
+            "source": "driftvvoodSeeker",
+            "className": "Seeker",
+            "classSource": "driftvvoodSeeker",
+            "subclassSource": "driftvvoodSeeker",
+            "subclassShortName": "burningTongue",
+            "page": 10,
+            "level": 3,
+            "header": 2,
+            "entries": [
+                "At 3rd level, you become adept at finding the truths within the lies and seeing what makes your enemies tic. By using a bonus action, you can magically mark a sentient creature you can see within 60 feet, gaining insight into their mind. The target makes a Wisdom saving throw with a DC equal to your spell save DC. A creature can willingly choose to fail this save. On a successful save, you discern that this magic failed but the target is unaware of the attempt. On a failed save, you learn what the creature is known as commonly, such as how the creature would introduce themselves to a friendly acquaintance; additionally, for the next 10 minutes, the following applies:",
+                {
+                    "type": "list",
+                        "items": [
+                            "You know their exact location, even if they travel to a different plane of existence.",
+                            "You have advantage on Insight checks against the target.",
+                            "Once before the end of this effect, if the creature is brought to 0 hit points, you can use your reaction to have your deity stabilize the creature. Instead of dying, the creature is at 1 hit point and paralyzed until the end of your next turn. After stabilizing a creature in this way, you have advantage on Charisma ability checks against the creature until they have taken a rest."
+                        ]
+                },
+                "You can use this feature a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest. While you have no uses available, you can spend a Rite to use this feature again."
+            ]
+        },
+        {
+            "name": "Know Thy Enemy",
+            "source": "driftvvoodSeeker",
+            "className": "Seeker",
+            "classSource": "driftvvoodSeeker",
+            "subclassSource": "driftvvoodSeeker",
+            "subclassShortName": "burningTongue",
+            "page": 10,
+            "level": 10,
+            "header": 2,
+            "entries": [
+                "At 10th level, you can prepare a friend for how best to deal with a type of foe. By spending a Rite as an action, touch an ally and pick one type of creature: Aberrations, Celestials, Dragons, Elementals, Fey, Fiends, Humanoid, or Undead. For 10 minutes, any attacks on the target of this feature by creatures of the chosen type have disadvantage. The target also can't be charmed, frightened, or possessed by them. If the target is already charmed, frightened, or possessed by such a creature, the target gains advantage on any new saving throw against the relevant effect. If you use this feature while it is active, the first casting of this effect stops."
+            ]
+        },
+        {
+            "name": "Holy Hand, Divine Voice", 
+            "source": "driftvvoodSeeker",
+            "className": "Seeker",
+            "classSource": "driftvvoodSeeker",
+            "subclassShortName": "burningTongue",
+            "subclassSource": "driftvvoodSeeker",
+            "level": 14,
+            "page": 10,
+            "header": 2,
+            "entries": [
+                "When you reach 14th level, you become an instrument of your divine patron, their will carried out through your hands. After finishing a long rest, choose a damage type: radiant, necrotic, cold, fire, lightning, or poison. The damage type you choose should reflect an aspect of your patron. When you deal damage to a creature, add your proficiency bonus to the damage of the chosen type. If you are attacking your Blessed Bond target, you may change all of your weapon damage to the chosen type of damage.",
+                "Additionally, you learn the cantrip friends which does not count against your cantrip total. When friends ends, the target does not realize they were ensorcelled by this cantrip."
+            ],
+            "additionalSpells": {
+                "innate": {
+                    "-": [
+                        "friends"
+                    ]
+                }
+            }
+        },
+        {
+            "name": "Maven of Collective Dreams",
+            "source": "driftvvoodSeeker",
+            "className": "Seeker",
+            "classSource": "driftvvoodSeeker",
+            "subclassSource": "driftvvoodSeeker",
+            "subclassShortName": "collectiveDreams",
+            "page": 11,
+            "level": 1,
+            "entries": [
+                "Dreams are gateways to other worlds and various futures and seekers that follow this path know this and use their abilities to see different realities and lead others to their destinies. Seekers of this Mavenhood dream the future and interpret the dreams of others with great ease.",
+                {
+                    "type": "refSubclassFeature",
+                    "subclassFeature": "Collective Dreams Spells|Seeker|driftvvoodSeeker|collectiveDreams|driftvvoodSeeker|1"
+                },
+                {
+                    "type": "refSubclassFeature",
+                    "subclassFeature": "Visions From Beyond|Seeker|driftvvoodSeeker|collectiveDreams|driftvvoodSeeker|1"
+                }
+            ]
+        },
+        {
+            "name": "Collective Dreams Spells",
+            "source": "driftvvoodSeeker",
+            "className": "Seeker",
+            "classSource": "driftvvoodSeeker",
+            "subclassSource": "driftvvoodSeeker",
+            "subclassShortName": "collectiveDreams",
+            "page": 11,
+            "level": 1,
+            "header": 1,
+            "entries": [
+                "When choosing this Mavenhood, you gain access to spells that allow you to share the slumbering world with others. At 1st, 3rd, 5th, 7th, and 9th level you always prepare the following spells.",
+                {
+                    "type": "table",
+                    "caption": "Expanded Spell List",
+                    "colLabels": [
+                        "Seeker Level",
+                        "Maven Spell"
+                    ],
+                    "colStyles": [
+                        "col-3 text-center",
+                        "col-9"
+                    ],
+                    "rows": [
+                        [
+                            "1st",
+                            "{@spell minor illusion}, {@spell sanctuary}, {@spell sleep}"
+                        ],
+                        [
+                            "2nd",
+                            "{@spell mind spike}, {@spell see invisibility}"
+                        ],
+                        [
+                            "3rd",
+                            "{@spell catnap}, {@spell hypnotic pattern}"
+                        ],
+                        [
+                            "4th",
+                            "{@spell divination}, {@spell phantasmal killer}"
+                        ],
+                        [
+                            "5th",
+                            "{@spell creation}, {@spell dream}"
+                        ]
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Visions From Beyond",
+            "source": "driftvvoodSeeker",
+            "className": "Seeker",
+            "classSource": "driftvvoodSeeker",
+            "subclassSource": "driftvvoodSeeker",
+            "subclassShortName": "collectiveDreams",
+            "page": 11,
+            "level": 1,
+            "header": 2,
+            "entries": [
+                "When you choose this Mavenhood, rather than sleeping during a long rest, you must spend at least six hours total in a dreaming but motionless state; in this state, you appear asleep, but it doesn’t render you unconscious, and you can see and hear as normal.",
+                "Additionally, after finishing a long rest, choose a skill to become proficient in until you finish your next long rest. At 6th level choose a skill you are proficient in to add double your proficiency bonus to checks you make with it."
+            ]
+        },
+        {
+            "name": "Prophetic Dreams",
+            "source": "driftvvoodSeeker",
+            "className": "Seeker",
+            "classSource": "driftvvoodSeeker",
+            "subclassSource": "driftvvoodSeeker",
+            "subclassShortName": "collectiveDreams",
+            "page": 11,
+            "level": 3,
+            "header": 2,
+            "entries": [
+                "At 3rd level, your dreams become prophetic and seep into those around you. As you finish a long rest, choose a number of creatures within sight that dream, including yourself, equal to half your proficiency bonus; those creatures may roll a d20 and record the number rolled. Before rolling any attack roll, saving throw, or ability check, that creature can choose to use the prophetic roll once instead of making that roll."
+            ]
+        },
+        {
+            "name": "Sweet Repose",
+            "source": "driftvvoodSeeker",
+            "className": "Seeker",
+            "classSource": "driftvvoodSeeker",
+            "subclassSource": "driftvvoodSeeker",
+            "subclassShortName": "collectiveDreams",
+            "page": 11,
+            "level": 3,
+            "header": 2,
+            "entries": [
+                "Bringing others to the dream world is part of your craft. Also at 3rd level, when casting the spell {@spell sleep}, you may add 10 to each spell level used above 1st.",
+                "You may spend a Rite when casting {@spell sleep} to either target one specific creature with the spell or make the spell last for 10 minutes instead of 1 minute. If one creature is specifically targeted by this spell and is not woken early from their magical slumber, they view you neutrally if they were hostile."
+            ]
+        },
+        {
+            "name": "Lucid Dreamer", 
+            "source": "driftvvoodSeeker",
+            "className": "Seeker",
+            "classSource": "driftvvoodSeeker",
+            "subclassShortName": "collectiveDreams",
+            "subclassSource": "driftvvoodSeeker",
+            "level": 10,
+            "page": 11,
+            "header": 2,
+            "entries": [
+                "Your dreams bleed into the waking world. At 10th level, you may split your mind in two, your dreaming mind and your waking mind. By using two Rites while concentrating on a divination or illusion spell, you may have your dreaming mind continue to concentrate on that spell while your waking mind may concentrate on an additional spell. When the DM requires you to make a check to maintain concentration, you must make a Constitution saving throw for each spell separately. You may end concentration with either your dreaming or waking mind and continue concentrating on the other spell at any time."
+            ]
+        },
+        {
+            "name": "Sleep Tight", 
+            "source": "driftvvoodSeeker",
+            "className": "Seeker",
+            "classSource": "driftvvoodSeeker",
+            "subclassShortName": "collectiveDreams",
+            "subclassSource": "driftvvoodSeeker",
+            "level": 10,
+            "page": 11,
+            "header": 2,
+            "entries": [
+                "Also at 10th level, you may cast {@spell tiny hut} without using a spell slot once per long rest. When cast this way, each creature within the spell's dome is under the effects of the {@spell nondetection} spell and does not suffer from nightmares."
+            ],
+            "additionalSpells": [
+				{
+					"innate": {
+                        "10": {
+                            "daily":
+                            {
+                                "1e": [
+                                    "tiny hut"
+                                ]
+                            }
+                        }
+					}
+				}
+			]
+        },
+        {
+            "name": "Synchronicity and Coincidence",
+            "source": "driftvvoodSeeker",
+            "className": "Seeker",
+            "classSource": "driftvvoodSeeker",
+            "subclassSource": "driftvvoodSeeker",
+            "subclassShortName": "collectiveDreams",
+            "page": 11,
+            "level": 14,
+            "header": 2,
+            "entries": [
+                "At 14th level, you truly see how your dreams line up with your waking life, you change your ways to better fit what the future holds. After preparing your spells following a long rest, you may prepare an additional spell from any spell list; this spell counts as a seeker spell. The spell you choose must be of a level you can cast, as shown on the seeker table, or a cantrip.",
+                "Additionally, the magic from some of your spells carries forward to help your other magics. When you cast a Divination spell of 1st level or higher, roll a d6 Coincidence die. If the number rolled is less than your proficiency bonus, then add that to the DC of the next spell you cast. If the next spell doesn’t have a DC, Coincidence is wasted. Once you’ve added your Coincidence die to a DC, you can’t use it again until after a short rest."
+            ]
+        },
+        {
+            "name": "Maven of the Last Breath",
+            "source": "driftvvoodSeeker",
+            "className": "Seeker",
+            "classSource": "driftvvoodSeeker",
+            "subclassSource": "driftvvoodSeeker",
+            "subclassShortName": "lastBreath",
+            "page": 12,
+            "level": 1,
+            "entries": [
+                "The moment between life and death holds great knowledge and power for those that can touch it and return. Seekers of this Mavenhood harness the weird effects of near death to gain new abilities, even guiding others to and from either side of the mortal veil. Standard divination methods for these Mavens include ouija boards, seances, and casting bones to read omens.",
+                {
+                    "type": "refSubclassFeature",
+                    "subclassFeature": "Last Breath Spells|Seeker|driftvvoodSeeker|lastBreath|driftvvoodSeeker|1"
+                },
+                {
+                    "type": "refSubclassFeature",
+                    "subclassFeature": "Cheat Death|Seeker|driftvvoodSeeker|lastBreath|driftvvoodSeeker|1"
+                },
+                {
+                    "type": "refSubclassFeature",
+                    "subclassFeature": "Lessons from the Lost|Seeker|driftvvoodSeeker|lastBreath|driftvvoodSeeker|1"
+                }
+            ]
+        },
+        {
+            "name": "Last Breath Spells",
+            "source": "driftvvoodSeeker",
+            "className": "Seeker",
+            "classSource": "driftvvoodSeeker",
+            "subclassSource": "driftvvoodSeeker",
+            "subclassShortName": "lastBreath",
+            "page": 12,
+            "level": 1,
+            "header": 1,
+            "entries": [
+                "When choosing this Maven, you gain access to spells to protect some from death and bring others closer to their own demise. At 1st, 3rd, 5th, 7th, and 9th level you always prepare the following spells.",
+                {
+                    "type": "table",
+                    "caption": "Expanded Spell List",
+                    "colLabels": [
+                        "Seeker Level",
+                        "Maven Spell"
+                    ],
+                    "colStyles": [
+                        "col-3 text-center",
+                        "col-9"
+                    ],
+                    "rows": [
+                        [
+                            "1st",
+                            "{@spell healing word}, {@spell inflict wounds}"
+                        ],
+                        [
+                            "2nd",
+                            "{@spell silence}, {@spell warding bond}"
+                        ],
+                        [
+                            "3rd",
+                            "{@spell life transference|xge}, {@spell revivify}"
+                        ],
+                        [
+                            "4th",
+                            "{@spell death ward}, {@spell sickening radiance|xge}"
+                        ],
+                        [
+                            "5th",
+                            "{@spell dispel evil and good}, {@spell negative energy flood|xge}"
+                        ]
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Cheat Death",
+            "source": "driftvvoodSeeker",
+            "className": "Seeker",
+            "classSource": "driftvvoodSeeker",
+            "subclassSource": "driftvvoodSeeker",
+            "subclassShortName": "lastBreath",
+            "page": 12,
+            "level": 1,
+            "header": 2,
+            "entries": [
+                "When you choose this Mavenhood, instead of rolling a death saving throw, you can choose to gain hit points equal to 4 times your seeker level. You can’t use the feature again until you finish a long rest or by using a number of Rites equal to half your proficiency bonus. At 10th level, you may use this feature immediately when you drop to 0 hit points."
+            ]
+        },
+        {
+            "name": "Lessons From The Lost",
+            "source": "driftvvoodSeeker",
+            "className": "Seeker",
+            "classSource": "driftvvoodSeeker",
+            "subclassSource": "driftvvoodSeeker",
+            "subclassShortName": "lastBreath",
+            "page": 12,
+            "level": 1,
+            "header": 2,
+            "entries": [
+                "Additionally at 1st level any time when you are at 0 hit points, you may choose one language, skill, or tool to gain proficiency in until the next time you are at 0 hit points. At 6th level, choose one skill you are proficient with, add double your proficiency bonus to checks you make with it."
+            ]
+        },
+        {
+            "name": "Drop Dead",
+            "source": "driftvvoodSeeker",
+            "className": "Seeker",
+            "classSource": "driftvvoodSeeker",
+            "subclassSource": "driftvvoodSeeker",
+            "subclassShortName": "lastBreath",
+            "page": 12,
+            "level": 3,
+            "header": 2,
+            "entries": [
+                "At 3rd level, offer up your life force to come within a breath of your own death. At any time, you may drop to 0 hit points; when you use this feature, you are able to continue concentrating on any spell or ability unless you suffer a death saving throw failure."
+            ]
+        },
+        {
+            "name": "Death Rattle",
+            "source": "driftvvoodSeeker",
+            "className": "Seeker",
+            "classSource": "driftvvoodSeeker",
+            "subclassSource": "driftvvoodSeeker",
+            "subclassShortName": "lastBreath",
+            "page": 12,
+            "level": 3,
+            "header": 2,
+            "entries": [
+                "Also at 3rd level, when you near your last breath, you can enter a Death Rattle, summoning new powers. The instant you return to consciousness after being at 0 hit points you may choose to recover 1 hit point, stand up, and gain the following features:",
+                {
+                    "type": "list",
+                    "items":[
+                        "You have resistance to all damage.",
+                        "You may add your Seeker level to necrotic or radiant damage that one creature you can see takes once on your turn.",
+                        "You have advantage on Intelligence and Wisdom ability checks.",
+                        "Any divination spell you have prepared that has a casting time of 1 minute or more requires an action to cast instead.",
+                        "As a bonus action you may give an ally you can see advantage on their next ability check or saving throw before the start of your next turn."
+                    ]
+                },
+                "Death Rattle may be used a number of times per long rest equal to your proficiency bonus and lasts 1 minute."
+            ]
+        },
+        {
+            "name": "Breath To The Breathless", 
+            "source": "driftvvoodSeeker",
+            "className": "Seeker",
+            "classSource": "driftvvoodSeeker",
+            "subclassShortName": "lastBreath",
+            "subclassSource": "driftvvoodSeeker",
+            "level": 10,
+            "page": 12,
+            "header": 2,
+            "entries": [
+                "At 10th level, your powers of communication become extraordinary when you are close to those who have past. You may cast {@spell speak with dead} a number of times per long rest equal to your proficiency bonus without using a spell slot. All Charisma checks you make when {@spell speak with dead} is cast using this feature are done so with advantage."
+            ]
+        },
+        {
+            "name": "Near Death Experience",
+            "source": "driftvvoodSeeker",
+            "className": "Seeker",
+            "classSource": "driftvvoodSeeker",
+            "subclassSource": "driftvvoodSeeker",
+            "subclassShortName": "lastBreath",
+            "page": 12,
+            "level": 14,
+            "header": 2,
+            "entries": [
+                "At 14th level, when others stand at Death’s doorway, you can help them recover and find their own power. If an ally you can see falls unconscious as they drop to 0 hit points or fails a death saving throw, you may use a Rite as a reaction to stabilize that ally and, for the next minute, give them advantage on their next ability check, attack roll, or saving throw. You may use a second Rite to heal that ally for 1 hit point and give them temporary hit points equal to twice your seeker level."
+            ]
+        },
+        {
+            "name": "Raising Spirits",
+            "source": "driftvvoodSeeker",
+            "className": "Seeker",
+            "classSource": "driftvvoodSeeker",
+            "subclassSource": "driftvvoodSeeker",
+            "subclassShortName": "lastBreath",
+            "page": 12,
+            "level": 14,
+            "header": 2,
+            "entries": [
+                "Additionally at 14th level, as you come near the end of life, you may pull a spirit from the world of the dead to aid you. Immediately as you drop to 0 hit points, you may use a spell slot of 3rd level or higher to cast {@spell summon undead|tce} without needing to use concentration for the duration of the spell. The spirit you summon listens to your commands for the duration of the spell, whether you recover or die."
+            ]
+        },
+        {
+            "name": "Maven of the Lurking Hand",
+            "source": "driftvvoodSeeker",
+            "className": "Seeker",
+            "classSource": "driftvvoodSeeker",
+            "subclassSource": "driftvvoodSeeker",
+            "subclassShortName": "lurkingHand",
+            "page": 13,
+            "level": 1,
+            "entries": [
+                "Those that are tasked with the subtle finding and removal of threats to their patrons are part of this Mavenhood. The magic that is given to a Maven of the Lurking Hand is channeled through their fingertips into their weapon to better carry out the will of their deity. Reading palms, throwing finger bones, and studying handwriting are examples of common omen reading by this Mavenhood.",
+                {
+                    "type": "refSubclassFeature",
+                    "subclassFeature": "Lurking Hand Spells|Seeker|driftvvoodSeeker|lurkingHand|driftvvoodSeeker|1"
+                },
+                {
+                    "type": "refSubclassFeature",
+                    "subclassFeature": "Doesn't Look Like Anything to Me...|Seeker|driftvvoodSeeker|lurkingHand|driftvvoodSeeker|1"
+                }
+            ]
+        },
+        {
+            "name": "Lurking Hand Spells",
+            "source": "driftvvoodSeeker",
+            "className": "Seeker",
+            "classSource": "driftvvoodSeeker",
+            "subclassSource": "driftvvoodSeeker",
+            "subclassShortName": "lurkingHand",
+            "page": 13,
+            "level": 1,
+            "header": 1,
+            "entries": [
+                "When choosing this Mavenhood, you gain access to spells that help you move without being sensed and strike hard when needed. At 1st, 3rd, 5th, 7th, and 9th level you always prepare the following spells.",
+                {
+                    "type": "table",
+                    "caption": "Expanded Spell List",
+                    "colLabels": [
+                        "Seeker Level",
+                        "Maven Spell"
+                    ],
+                    "colStyles": [
+                        "col-3 text-center",
+                        "col-9"
+                    ],
+                    "rows": [
+                        [
+                            "1st",
+                            "{@spell fog cloud}, {@spell mage hand}, {@spell wrathful smite}"
+                        ],
+                        [
+                            "2nd",
+                            "{@spell branding smite}, {@spell pass without trace}"
+                        ],
+                        [
+                            "3rd",
+                            "{@spell blinding smite}, {@spell nondetection}"
+                        ],
+                        [
+                            "4th",
+                            "{@spell greater invisibility}, {@spell staggering smite}"
+                        ],
+                        [
+                            "5th",
+                            "{@spell banishing smite}, {@spell passwall}"
+                        ]
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Doesn't Look Like Anything To Me...",
+            "source": "driftvvoodSeeker",
+            "className": "Seeker",
+            "classSource": "driftvvoodSeeker",
+            "subclassSource": "driftvvoodSeeker",
+            "subclassShortName": "lurkingHand",
+            "page": 13,
+            "level": 1,
+            "header": 2,
+            "entries": [
+                "When you choose this Mavenhood, whenever you or a willing creature you can see rolls a 1 on a d20 when making a Dexterity (Stealth) check, you may use your reaction to reroll the ability check, taking the new roll instead.",
+                "Additionally, you gain proficiency in either Sleight of Hand or Stealth. At 6th level, you can choose a skill that you are proficient with to add double your proficiency bonus to checks you make with it."
+            ]
+        },
+        {
+            "name": "Hard Lurker",
+            "source": "driftvvoodSeeker",
+            "className": "Seeker",
+            "classSource": "driftvvoodSeeker",
+            "subclassSource": "driftvvoodSeeker",
+            "subclassShortName": "lurkingHand",
+            "page": 13,
+            "level": 3,
+            "header": 2,
+            "entries": [
+                "At 3rd level, your premonitions help you move quicker in danger. When rolling initiative, you may add an additional d6 to your roll.",
+                "Additionally, you can gain a blessing of invisibility from your deity. After using the Hide action, you may become invisible. Your invisibility ends when you cast a spell, make an attack, or at the start of your next turn. You may use this ability a number of times per long rest equal to your proficiency bonus.",
+                "You may empower this ability by using a Rite to have the invisibility last until the end instead of the start of your next turn."
+            ]
+        },
+        {
+            "name": "Quickened Hand",
+            "source": "driftvvoodSeeker",
+            "className": "Seeker",
+            "classSource": "driftvvoodSeeker",
+            "subclassSource": "driftvvoodSeeker",
+            "subclassShortName": "lurkingHand",
+            "page": 13,
+            "level": 10,
+            "header": 2,
+            "entries": [
+                "The shadows seem to hasten your movements. Starting at 10th level, if you have used the Hide action in the past minute, you may add 10 feet to your movement speed.",
+                "Additionally, your magics cause you to burst with agility and speed. When you cast a spell using a bonus action, you can also take the Dash or Disengage action. You can use this feature a number of times per long rest equal to your proficiency bonus."
+            ]
+        },
+        {
+            "name": "Striking From The Shadows",
+            "source": "driftvvoodSeeker",
+            "className": "Seeker",
+            "classSource": "driftvvoodSeeker",
+            "subclassSource": "driftvvoodSeeker",
+            "subclassShortName": "lurkingHand",
+            "page": 13,
+            "level": 14,
+            "header": 2,
+            "entries": [
+                "You are your deity's divine weapon and the punishment you carry out is made greater by their blessing. Starting at 14th level, when an attack ends a concentration spell that causes damage, such as ensnaring strike or staggering smite, you score a critical hit when you roll a 19 or 20; whether you score a critical or not, you may roll one extra damage die from weapon damage and from the damage dealt by the spell that ended."
+            ]
+        },
+        {
+            "name": "Vanish",
+            "source": "driftvvoodSeeker",
+            "className": "Seeker",
+            "classSource": "driftvvoodSeeker",
+            "subclassSource": "driftvvoodSeeker",
+            "subclassShortName": "lurkingHand",
+            "page": 13,
+            "level": 14,
+            "header": 2,
+            "entries": [
+                "Also at 14th level, you always have {@spell arcane} hand and {@spell invisibility} prepared, and they do not count against the number of spells you can prepare each day. Also, you may cast the spell {@spell invisibility} at its lowest level using a Rite."
+            ],
+            "additionalSpells": [
+				{
+					"innate": {
+                        "10": {
+                            "daily":
+                            {
+                                "1e": [
+                                    "invisibility"
+                                ]
+                            }
+                        }
+					},
+                    "prepared": {
+                        "14": [
+                            "arcane hand",
+                            "invisibility"
+                        ]
+                    }
+				}
+			]
+        },
+        {
+            "name": "Maven of the Mystical Mind",
+            "source": "driftvvoodSeeker",
+            "className": "Seeker",
+            "classSource": "driftvvoodSeeker",
+            "subclassSource": "driftvvoodSeeker",
+            "subclassShortName": "mysticalMind",
+            "page": 14,
+            "level": 1,
+            "entries": [
+                "With a deep connection to psionic powers, the abilities of these Mavens fall into the same realms as prophets and soothsayers. Their magics are mystical and their portents appear strange to many. Their means of predicting the future are usually through deep meditation and focus, often appearing as if they are not doing anything at all.",
+                {
+                    "type": "refSubclassFeature",
+                    "subclassFeature": "Mystical Mind Spells|Seeker|driftvvoodSeeker|mysticalMind|driftvvoodSeeker|1"
+                },
+                {
+                    "type": "refSubclassFeature",
+                    "subclassFeature": "Soothsayer|Seeker|driftvvoodSeeker|mysticalMind|driftvvoodSeeker|1"
+                }
+            ]
+        },
+        {
+            "name": "Mystical Mind Spells",
+            "source": "driftvvoodSeeker",
+            "className": "Seeker",
+            "classSource": "driftvvoodSeeker",
+            "subclassSource": "driftvvoodSeeker",
+            "subclassShortName": "mysticalMind",
+            "page": 14,
+            "level": 1,
+            "header": 1,
+            "entries": [
+                "When choosing this Mavenhood, you gain access to spells that let you learn secret knowledge and bend reality. At 1st, 3rd, 5th, 7th, and 9th level you always prepare the following spells.",
+                {
+                    "type": "table",
+                    "caption": "Expanded Spell List",
+                    "colLabels": [
+                        "Seeker Level",
+                        "Maven Spell"
+                    ],
+                    "colStyles": [
+                        "col-3 text-center",
+                        "col-9"
+                    ],
+                    "rows": [
+                        [
+                            "1st",
+                            "{@spell catapult|xge}, {@spell unseen servant}"
+                        ],
+                        [
+                            "2nd",
+                            "{@spell borrowed knowledge}, {@spell detect thoughts}"
+                        ],
+                        [
+                            "3rd",
+                            "{@spell fly}, {@spell sending}, {@spell tongues}"
+                        ],
+                        [
+                            "4th",
+                            "{@spell arcane eye}, {@spell resilient sphere}"
+                        ],
+                        [
+                            "5th",
+                            "{@spell telekinesis}, {@spell wall of force}"
+                        ]
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Soothsayer",
+            "source": "driftvvoodSeeker",
+            "className": "Seeker",
+            "classSource": "driftvvoodSeeker",
+            "subclassSource": "driftvvoodSeeker",
+            "subclassShortName": "mysticalMind",
+            "page": 14,
+            "level": 1,
+            "header": 2,
+            "entries": [
+                "When you choose this Mavenhood, your truths take root in the minds of others; you gain advantage on ability checks related to convincing others of your predictions and fortunes.",
+                "You also gain proficiency in either Arcana or Insight. At 6th level, you can choose a skill that you are proficient with to add double your proficiency bonus to checks you make with it."
+            ],
+            "skillProficiencies": [
+                {
+                    "choose": {
+                        "from": [
+                            "arcana",
+                            "insight"
+                        ],
+                        "count": 1
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Weirding",
+            "source": "driftvvoodSeeker",
+            "className": "Seeker",
+            "classSource": "driftvvoodSeeker",
+            "subclassSource": "driftvvoodSeeker",
+            "subclassShortName": "mysticalMind",
+            "page": 14,
+            "level": 3,
+            "header": 2,
+            "entries": [
+                "At 3rd level, showing others your abilities can sometimes be as important as the omens you portend; you may cast the cantrip thaumaturgy as a bonus action and without using components."
+            ],
+            "additionalSpells": [
+				{
+					"innate": {
+                        "-": [
+                            "thaumaturgy"
+                        ]
+                    }
+				}
+            ]
+        },
+        {
+            "name": "Fortune-teller",
+            "source": "driftvvoodSeeker",
+            "className": "Seeker",
+            "classSource": "driftvvoodSeeker",
+            "subclassSource": "driftvvoodSeeker",
+            "subclassShortName": "mysticalMind",
+            "page": 14,
+            "level": 3,
+            "header": 2,
+            "entries": [
+                "At 3rd level, you begin to divine brief bits of your path ahead. A number of times per long rest equal to your proficiency bonus you can cast {@spell augury} by using a Rite instead of a spell slot.",
+                "When you cast {@spell augury} this way, the cast time is an action, there is no cumulative effect which causes a random outcome, and you get a sense of the next hour instead of just 30 minutes. Depending on the outcome of the {@spell augury} spell cast using this feature, you also gain a boon:",
+                "{@b Weal}: Your confidence is bolstered! Once in the next hour, you can use your reaction to have an ally reroll any attack roll, saving throw, or ability check.",
+                "{@b Woe}: You’re ready to face oncoming foes! Once in the next hour, you can use your bonus action to impose disadvantage on the next attack roll, saving throw, or ability check by a creature you can see.",
+                "{@b Weal/Woe}: Steel yourself for whatever comes next! Once in the next hour, you can give yourself advantage on any attack roll, saving throw, or ability check prior to rolling.",
+                "{@b Neither}: Decide your own fate! Roll a d20 and record the number rolled. Once in the next hour, you can replace any attack roll, saving throw, or ability check made by you or a creature that you can see with this foretelling roll. You must choose to do so before the roll."
+            ]
+        },
+        {
+            "name": "Mind Over Matter", 
+            "source": "driftvvoodSeeker",
+            "className": "Seeker",
+            "classSource": "driftvvoodSeeker",
+            "subclassShortName": "mysticalMind",
+            "subclassSource": "driftvvoodSeeker",
+            "level": 10,
+            "page": 14,
+            "header": 2,
+            "entries": [
+                "At 10th level, the world begins to bend around your mind, allowing you to work magics even if you don't have the correct tools at hand. By spending an amount of Rites equal to the spell level, you may ignore all components of that spell, even if the material component is consumed."
+            ]
+        },
+        {
+            "name": "Intuition",
+            "source": "driftvvoodSeeker",
+            "className": "Seeker",
+            "classSource": "driftvvoodSeeker",
+            "subclassSource": "driftvvoodSeeker",
+            "subclassShortName": "mysticalMind",
+            "page": 14,
+            "level": 10,
+            "header": 2,
+            "entries": [
+                "Also at 10th level, you may cast {@spell detect thoughts} a number of times per long rest equal to your proficiency bonus without expending a spell slot. When you cast @spell detect thoughts} this way, you may use two Rites to not have the target of this spell sense that they are being mentally interrogated."
+            ]
+        },
+        {
+            "name": "Twist Fate",
+            "source": "driftvvoodSeeker",
+            "className": "Seeker",
+            "classSource": "driftvvoodSeeker",
+            "subclassSource": "driftvvoodSeeker",
+            "subclassShortName": "mysticalMind",
+            "page": 14,
+            "level": 14,
+            "header": 2,
+            "entries": [
+                "At 14th level, luck and fate become your playthings, storing it up and spending it as you see fit. This feature can be used on any creature who can see or hear you within 60 feet when they perform an ability check, attack roll, or saving throw.",
+                "Any time a creature within range rolls a 1 or a 20, you may use your reaction to save that number for future use, nothing changes for the creature that rolled the 1 or 20. If you saved a 1, when a creature within range rolls a 20, you may use two Rites as a reaction to replace that 20 rolled with a 1 then you may choose to save that 20. The opposite can also occur, if you have a 20 saved, when a creature within range rolls a 1, you may use two Rite as a reaction to replace that 1 with a 20 then you may save that 1 to be used at another time.",
+                "After taking a long rest, whatever luck you have saved leaves you."
+            ]
+        },
+        {
+            "name": "Maven of the Rotting Voice",
+            "source": "driftvvoodSeeker",
+            "className": "Seeker",
+            "classSource": "driftvvoodSeeker",
+            "subclassSource": "driftvvoodSeeker",
+            "subclassShortName": "rottingVoice",
+            "page": 16,
+            "level": 1,
+            "entries": [
+                "Dark words come from dark hearts. The Mavens of the Rotting Voice are magically enhanced orators. Whether sweet or acidic, their spellbinding words carry so much weight that they can even talk the dead into walking with the living. Listening to ambient spirits, burning bones, and using a ouija board are regular practices within this Mavenhood.",
+                {
+                    "type": "refSubclassFeature",
+                    "subclassFeature": "Rotting Voice Spells|Seeker|driftvvoodSeeker|rottingVoice|driftvvoodSeeker|1"
+                },
+                {
+                    "type": "refSubclassFeature",
+                    "subclassFeature": "Eloquent|Seeker|driftvvoodSeeker|rottingVoice|driftvvoodSeeker|1"
+                }
+            ]
+        },
+        {
+            "name": "Rotting Voice Spells",
+            "source": "driftvvoodSeeker",
+            "className": "Seeker",
+            "classSource": "driftvvoodSeeker",
+            "subclassSource": "driftvvoodSeeker",
+            "subclassShortName": "rottingVoice",
+            "page": 16,
+            "level": 1,
+            "header": 1,
+            "entries": [
+                "When choosing this Mavenhood, you gain access to spells that help you control your foes and enlist new friends. At 1st, 3rd, 5th, 7th, and 9th level you always prepare the following spells.",
+                {
+                    "type": "table",
+                    "caption": "Expanded Spell List",
+                    "colLabels": [
+                        "Seeker Level",
+                        "Maven Spell"
+                    ],
+                    "colStyles": [
+                        "col-3 text-center",
+                        "col-9"
+                    ],
+                    "rows": [
+                        [
+                            "1st",
+                            "{@spell charm person}, {@spell dissonant whispers}"
+                        ],
+                        [
+                            "2nd",
+                            "{@spell gentle repose}, {@spell phantasmal force}, {@spell suggestion}"
+                        ],
+                        [
+                            "3rd",
+                            "{@spell enemies abound|xge}, {@spell summon undead|tce}"
+                        ],
+                        [
+                            "4th",
+                            "{@spell charm person}, {@spell death ward}"
+                        ],
+                        [
+                            "5th",
+                            "{@spell dominate person}, {@spell raise dead}"
+                        ]
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Eloquent",
+            "source": "driftvvoodSeeker",
+            "className": "Seeker",
+            "classSource": "driftvvoodSeeker",
+            "subclassSource": "driftvvoodSeeker",
+            "subclassShortName": "rottingVoice",
+            "page": 16,
+            "level": 1,
+            "header": 2,
+            "entries": [
+                "When you choose this Mavenhood, you gain proficiency in two of the following skills: Deception, Intimidation, Performance, or Persuasion. At 6th level, you can choose a skill that you are proficient with to add double your proficiency bonus to checks you make with it."
+            ],
+            "skillProficiencies": [
+                {
+                    "choose": {
+                        "from": [
+                            "deception",
+                            "intimidation",
+                            "performance",
+                            "persuasion"
+                        ],
+                        "count": 2
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Last Words",
+            "source": "driftvvoodSeeker",
+            "className": "Seeker",
+            "classSource": "driftvvoodSeeker",
+            "subclassSource": "driftvvoodSeeker",
+            "subclassShortName": "rottingVoice",
+            "page": 16,
+            "level": 3,
+            "header": 2,
+            "entries": [
+                "At 3rd level, you learn the language of the dead. You may learn the dying words, if any, of a humanoid corpse. Make a Charisma check, adding your proficiency bonus, contested by the corpse’s Wisdom (Insight) check when it was alive. If you succeed, the corpse speaks their last few words. Once you succeed using this feature, you may not use it again until after finishing a short rest."
+            ]
+        },
+        {
+            "name": "The Right Words",
+            "source": "driftvvoodSeeker",
+            "className": "Seeker",
+            "classSource": "driftvvoodSeeker",
+            "subclassSource": "driftvvoodSeeker",
+            "subclassShortName": "rottingVoice",
+            "page": 16,
+            "level": 3,
+            "header": 2,
+            "entries": [
+                "At 3rd level, you are blessed with just enough foreknowledge to understand the right thing to say and how to act in any social setting. Once per turn you may use one of these Right Words. When you use this feature a number of times equal to your proficiency bonus, you may not use this feature again until you either finish a long rest or expend a Rite.",
+                "{@b Thoughtful Words.} Instead of using your Charisma modifier, you may use your Intelligence modifier for a Charisma ability check or save.",
+                "{@b Whispered Words.} When casting an Enchantment, Illusion, or Necromancy spell that has a verbal component, the spell doesn’t require verbal, somatic, or material components that lack a cost.",
+                "{@b Piercing Words.} When forcing a creature to make an Intelligence, Wisdom, or Charisma saving throw, if they would roll with advantage, instead that creature rolls without advantage."
+            ]
+        },
+        {
+            "name": "Turn of Phrase",
+            "source": "driftvvoodSeeker",
+            "className": "Seeker",
+            "classSource": "driftvvoodSeeker",
+            "subclassSource": "driftvvoodSeeker",
+            "subclassShortName": "rottingVoice",
+            "page": 16,
+            "level": 10,
+            "header": 2,
+            "entries": [
+                "By 10th level, you've learned to undo your gaffes and blunders. When you cast a spell with a spell slot that fails due to the target being immune to the effect, you may use a Rite as a reaction to not expend that spell slot.",
+                "Additionally, once per short rest, you may use your reaction to skillfully reshape the memories of listeners in your immediate area, so that each creature of your choice within 5 feet of you forgets everything you said within the last 6 seconds."
+            ]
+        },
+        {
+            "name": "Hypnotic Whispers",
+            "source": "driftvvoodSeeker",
+            "className": "Seeker",
+            "classSource": "driftvvoodSeeker",
+            "subclassSource": "driftvvoodSeeker",
+            "subclassShortName": "rottingVoice",
+            "page": 16,
+            "level": 14,
+            "header": 2,
+            "entries": [
+                "At 14th level, your voice vibrates with magic. Pick one creature that is rolling to save against a spell you cast, you may use a Rite as a reaction to increase your spell save DC by half your proficiency bonus against that creature. You can use this feature only before the DM determines the outcome of the spell."
+            ]
+        },
+        {
+            "name": "Maven of the Shifting Flesh",
+            "source": "driftvvoodSeeker",
+            "className": "Seeker",
+            "classSource": "driftvvoodSeeker",
+            "subclassSource": "driftvvoodSeeker",
+            "subclassShortName": "shiftingFlesh",
+            "page": 17,
+            "level": 1,
+            "entries": [
+                "Focused on enhancing and changing their own bodies. These Mavens use transformative magics to adapt to whatever situation is thrown at them. By reading facial lines, palms, irises, or even blood dripped onto paper, Mavens of the Shifting Flesh read the subtle signs of the future.",
+                {
+                    "type": "refSubclassFeature",
+                    "subclassFeature": "Shifting Flesh Spells|Seeker|driftvvoodSeeker|shiftingFlesh|driftvvoodSeeker|1"
+                },
+                {
+                    "type": "refSubclassFeature",
+                    "subclassFeature": "Physical Perfection|Seeker|driftvvoodSeeker|shiftingFlesh|driftvvoodSeeker|1"
+                }
+            ]
+        },
+        {
+            "name": "Shifting Flesh Spells",
+            "source": "driftvvoodSeeker",
+            "className": "Seeker",
+            "classSource": "driftvvoodSeeker",
+            "subclassSource": "driftvvoodSeeker",
+            "subclassShortName": "shiftingFlesh",
+            "page": 17,
+            "level": 1,
+            "header": 1,
+            "entries": [
+                "When choosing this Mavenhood, you gain access to spells that allow you to adapt your physical body. At 1st, 3rd, 5th, 7th, and 9th level you always prepare the following spells.",
+                {
+                    "type": "table",
+                    "caption": "Expanded Spell List",
+                    "colLabels": [
+                        "Seeker Level",
+                        "Maven Spell"
+                    ],
+                    "colStyles": [
+                        "col-3 text-center",
+                        "col-9"
+                    ],
+                    "rows": [
+                        [
+                            "1st",
+                            "{@spell absorb elements|xge}, {@spell jump}, {@spell longstrider}"
+                        ],
+                        [
+                            "2nd",
+                            "{@spell alter self}, {@spell enlarge/reduce}"
+                        ],
+                        [
+                            "3rd",
+                            "{@spell haste}, {@spell tongues}"
+                        ],
+                        [
+                            "4th",
+                            "{@spell freedom of movement}, {@spell polymorph}"
+                        ],
+                        [
+                            "5th",
+                            "{@spell greater restoration}, {@spell skill empowerment|xge}"
+                        ]
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Physical Perfection",
+            "source": "driftvvoodSeeker",
+            "className": "Seeker",
+            "classSource": "driftvvoodSeeker",
+            "subclassSource": "driftvvoodSeeker",
+            "subclassShortName": "shiftingFlesh",
+            "page": 17,
+            "level": 1,
+            "header": 2,
+            "entries": [
+                "When you choose this Mavenhood your jump distance is doubled and you gain proficiency in the Acrobatics and Athletics skills. At 6th level, you can choose either Acrobatics or Athletics to add double your proficiency bonus to checks you make with that skill."
+            ],
+            "skillProficiencies": [
+                {
+                    "acrobatics": true,
+                    "athletics": true
+                }
+            ]
+        },
+        {
+            "name": "Reactive Adaptation",
+            "source": "driftvvoodSeeker",
+            "className": "Seeker",
+            "classSource": "driftvvoodSeeker",
+            "subclassSource": "driftvvoodSeeker",
+            "subclassShortName": "shiftingFlesh",
+            "page": 17,
+            "level": 3,
+            "header": 2,
+            "entries": [
+                "At 3rd level, during a time of stress, you gain a moment of clarity, knowing just what you need to do to overcome the challenges before you.",
+                "A number of times per long rest equal to your proficiency bonus you may morph your body and hone your senses to meet the challenges before you for the next 10 minutes. As a reaction to being attacked, making a saving throw, or before rolling an ability check expend a Rite to gain the following adaptations for the duration:",
+                "{@b Bending Bones}: If you are not in armor and do not have a shield equipped when activating this ability, you may choose to have your AC equal 10 + your Intelligence modifier + either your Strength or Dexterity modifier (your choice).",
+                "{@b Steeled Mind}: You can't roll a Strength and Dexterity ability check and saving throw with disadvantage.",
+                "{@b Hardened Shell}: Gain temporary hit points equal to your seeker level. These temporary hit points last until your adaptation ends."
+            ]
+        },
+        {
+            "name": "Remarkable Reactions",
+            "source": "driftvvoodSeeker",
+            "className": "Seeker",
+            "classSource": "driftvvoodSeeker",
+            "subclassSource": "driftvvoodSeeker",
+            "subclassShortName": "shiftingFlesh",
+            "page": 17,
+            "level": 3,
+            "header": 2,
+            "entries": [
+                "Also at 3rd level, when you use a Rite to activate Reactive Adaptation, expend a second Rite to cast a transmutation spell using the appropriate spell slot. The spell must be range of Self or Touch with a casting time of one action."
+            ]
+        },
+        {
+            "name": "Hearty and Healthy", 
+            "source": "driftvvoodSeeker",
+            "className": "Seeker",
+            "classSource": "driftvvoodSeeker",
+            "subclassShortName": "shiftingFlesh",
+            "subclassSource": "driftvvoodSeeker",
+            "level": 10,
+            "page": 17,
+            "header": 2,
+            "entries": [
+                "At 10th level, you can magically morph your body to make yourself more resilient and impart that hardiness onto others. While you are under the effect of your Premonition feature, you have resistance to non-magical damage such as mundane fire and a non-enchanted weapon.",
+                "You also learn the cantrip {@spell guidance} which does not count against your cantrip total. When the target of your {@spell guidance} other than you uses the bonus imparted by this cantrip to make a Strength or Dexterity ability check, they may add 2d4 instead of 1d4 to their ability check."
+            ],
+            "additionalSpells": [
+				{
+					"innate": {
+                        "-": [
+                            "guidance"
+                        ]
+                    }
+				}
+            ]
+        },
+        {
+            "name": "Shed Your Shell", 
+            "source": "driftvvoodSeeker",
+            "className": "Seeker",
+            "classSource": "driftvvoodSeeker",
+            "subclassShortName": "shiftingFlesh",
+            "subclassSource": "driftvvoodSeeker",
+            "level": 14,
+            "page": 17,
+            "header": 2,
+            "entries": [
+                "At 14th level, if Premonition is active, you make a Strength and Dexterity ability check with advantage.",
+                "Additionally at 14th level, magical transformations are second nature, allowing you to find new ways to use them. When you cast a transmutation spell of 1st level or above on yourself using a spell slot, you may choose to have one of the following affects occur:",
+                {
+                    "type": "list",
+                        "items": [
+                            "As your body changes, it repairs itself. Recover hit points equal to twice the level of spell cast.",
+                            "Maladies fall away as you are magically enhanced. Remove a disease, poison, or the status of being blinded or deafened.",
+                            "You may immediately move 10 feet without provoking opportunity attacks as your body feels renewed vigor!"
+                        ]
+                }
+            ]
+        },
+        {
+            "name": "Maven of the Verdant Pollex",
+            "source": "driftvvoodSeeker",
+            "className": "Seeker",
+            "classSource": "driftvvoodSeeker",
+            "subclassSource": "driftvvoodSeeker",
+            "subclassShortName": "verdantPollex",
+            "page": 18,
+            "level": 1,
+            "entries": [
+                "Through an ancient ritual, seekers that choose this mavenhood are entwined with a plant that represents a blessing from their deity. As the seeker's power grows, so too does this plant which offers protection and guidance. Plants sense much and remember what would otherwise be lost to time, they share this knowledge easily with these seekers. Mavens of the Verdant Pollex listen to the subtle signs of the surrounding flora to see glimpses of what is to come.",
+                {
+                    "type": "refSubclassFeature",
+                    "subclassFeature": "Verdant Pollex Spells|Seeker|driftvvoodSeeker|verdantPollex|driftvvoodSeeker|1"
+                },
+                {
+                    "type": "refSubclassFeature",
+                    "subclassFeature": "Growing Roots|Seeker|driftvvoodSeeker|verdantPollex|driftvvoodSeeker|1"
+                }
+            ]
+        },
+        {
+            "name": "Verdant Pollex Spells",
+            "source": "driftvvoodSeeker",
+            "className": "Seeker",
+            "classSource": "driftvvoodSeeker",
+            "subclassSource": "driftvvoodSeeker",
+            "subclassShortName": "verdantPollex",
+            "page": 18,
+            "level": 1,
+            "header": 1,
+            "entries": [
+                "When choosing this Mavenhood, you gain access to spells that let you listen to the earth and learn what was lost. At 1st, 3rd, 5th, 7th, and 9th level you always prepare the following spells.",
+                {
+                    "type": "table",
+                    "caption": "Expanded Spell List",
+                    "colLabels": [
+                        "Seeker Level",
+                        "Maven Spell"
+                    ],
+                    "colStyles": [
+                        "col-3 text-center",
+                        "col-9"
+                    ],
+                    "rows": [
+                        [
+                            "1st",
+                            "{@spell druidcraft}, {@spell entangle}, {@spell goodberry}"
+                        ],
+                        [
+                            "2nd",
+                            "{@spell barkskin}, {@spell whither and bloom|scc}"
+                        ],
+                        [
+                            "3rd",
+                            "{@spell plant growth}, {@spell speak with plants}"
+                        ],
+                        [
+                            "4th",
+                            "{@spell gasping vine}, {@spell guardian of nature|xge}"
+                        ],
+                        [
+                            "5th",
+                            "{@spell tree stride}, {@spell wrath of nature|xge}"
+                        ]
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Growing Roots",
+            "source": "driftvvoodSeeker",
+            "className": "Seeker",
+            "classSource": "driftvvoodSeeker",
+            "subclassSource": "driftvvoodSeeker",
+            "subclassShortName": "verdantPollex",
+            "page": 18,
+            "level": 1,
+            "header": 2,
+            "entries": [
+                "When you choose this Mavenhood, your body is somehow integrated with a plant of your choice, allowing you to absorb light as a source of food. If you spend at least a total of 1 hour in sunlight, you do not need to eat until after the next sunrise.",
+                "Additionally, you gain proficiency in either History or Nature. At 6th level, you can choose a skill that you are proficient with to add double your proficiency bonus to checks you make with it."
+            ]
+        },
+        {
+            "name": "The Land Sees...",
+            "source": "driftvvoodSeeker",
+            "className": "Seeker",
+            "classSource": "driftvvoodSeeker",
+            "subclassSource": "driftvvoodSeeker",
+            "subclassShortName": "verdantPollex",
+            "page": 18,
+            "level": 3,
+            "header": 2,
+            "entries": [
+                "Starting at 3rd level, you begin gaining the awareness of a plant, the finely tuned senses that listen to the ground. As such, you gain tremorsense to a radius of 10 feet.",
+                "A number of times per long rest equal to your proficiency bonus, you may use a bonus action to increase the radius of your tremorsense to 30 feet for 1 minute."
+            ],
+            "senses": [
+                "tremorsense 10 ft"
+            ]
+        },
+        {
+            "name": "...The Earth Remembers",
+            "source": "driftvvoodSeeker",
+            "className": "Seeker",
+            "classSource": "driftvvoodSeeker",
+            "subclassSource": "driftvvoodSeeker",
+            "subclassShortName": "verdantPollex",
+            "page": 18,
+            "level": 3,
+            "header": 2,
+            "entries": [
+                "Additionally at 3rd level, you may perform a minute long ritual while in an area with vegetation, such as a forest, city park, or kelp beds. By placing your hands on the ground, letting them slowly root down, restoring a number of health points equal to half your seeker level and listen closely to the subtle words of the plants, answering two of the following questions:",
+                {
+                    "type": "list",
+                        "items": [
+                            "If there is danger if you continue down the path you are traveling",
+                            "Where is the closest area of shelter",
+                            "What type of creature most recently trod on this ground and what direction were they heading",
+                            "What is the most powerful creature of a certain alignment within this area."
+                        ]
+                },
+                "The answer pertains only to a radius around you within a number of miles equal to your seeker level. You may use this feature once per short rest or by using a Rite."
+            ]
+        },
+        {
+            "name": "Old Growth", 
+            "source": "driftvvoodSeeker",
+            "className": "Seeker",
+            "classSource": "driftvvoodSeeker",
+            "subclassShortName": "verdantPollex",
+            "subclassSource": "driftvvoodSeeker",
+            "level": 10,
+            "page": 18,
+            "header": 2,
+            "entries": [
+                "At 10th level, you hear the whispers of the flora that surrounds you. When you are asked to roll an ability check to recall information or when making a History (Intelligence) or Nature (Intelligence), you may roll with advantage."
+            ]
+        },
+        {
+            "name": "Regrowth", 
+            "source": "driftvvoodSeeker",
+            "className": "Seeker",
+            "classSource": "driftvvoodSeeker",
+            "subclassShortName": "verdantPollex",
+            "subclassSource": "driftvvoodSeeker",
+            "level": 10,
+            "page": 18,
+            "header": 2,
+            "entries": [
+                "Additionally at 10th level, you may use your action to apply a healing poultice created from the vegetation that is a part of you. With this poultice you may end one poison or disease effect on a creature you touch, alternatively, you may heal the creature touched for an amount of hit points equal to your 3d6 plus seeker spell level. You may use this feature twice per short rest or by using a Rite."
+            ]
+        },
+        {
+            "name": "Bountiful Harvest",
+            "source": "driftvvoodSeeker",
+            "className": "Seeker",
+            "classSource": "driftvvoodSeeker",
+            "subclassSource": "driftvvoodSeeker",
+            "subclassShortName": "verdantPollex",
+            "page": 18,
+            "level": 14,
+            "header": 2,
+            "entries": [
+                "At 14th level, your connection with vegetation is unparalleled. When you use the 3rd level feature … The Earth Remembers, you may restore a number of health points equal to your seeker level instead of half your seeker level and receive answers to three questions instead of just two.",
+                "Additionally, you prepare an additional spell of your choice from the following list each morning: {@spell bones of the earth|xge}, {@spell druid grove|xge}, {@spell find the path}, {@spell hero's feast}, {@spell transport via plants}, or {@spell wall of thorns}. This spell doesn't count against the number of spells you prepare. If you spend an hour with your feet planted in the ground and in direct sunlight, you may cast the prepared spell without using a spell slot once per long rest."
+            ]
+        }
+	],
+	"subclass": [
+		{
+			"name": "Maven of the All-Seeing Eye",
+			"source": "driftvvoodSeeker",
+			"page": 7,
+			"shortName": "allSeeingEye",
+			"subclassFeatures": [
+				"Maven of the All-Seeing Eye|Seeker|driftvvoodSeeker|allSeeingEye|driftvvoodSeeker|1",
+                "Stolen Glances|Seeker|driftvvoodSeeker|allSeeingEye|driftvvoodSeeker|3",
+				"Wandering Eye|Seeker|driftvvoodSeeker|allSeeingEye|driftvvoodSeeker|3",
+				"Second Sight|Seeker|driftvvoodSeeker|allSeeingEye|driftvvoodSeeker|10",
+				"Cold Reading|Seeker|driftvvoodSeeker|allSeeingEye|driftvvoodSeeker|14",
+                "Sight Beyond Sight|Seeker|driftvvoodSeeker|allSeeingEye|driftvvoodSeeker|14"
+			],
+			"className": "Seeker",
+			"classSource": "driftvvoodSeeker",
+            "additionalSpells": [
+                {
+                    "prepared": {
+						"1": [
+							"faerie fire",
+                            "guiding bolt"
+						],
+                        "3": [
+							"darkvision",
+                            "see invisibility"
+						],
+                        "5": [
+							"hypnotic pattern",
+                            "remove curse"
+						],
+                        "7": [
+							"arcane eye",
+                            "divination"
+						],
+                        "9": [
+							"commune",
+                            "scrying"
+						]
+					}
+                }
+            ]
+		},
+		{
+			"name": "Maven of the Bitter Heart",
+			"source": "driftvvoodSeeker",
+			"page": 8,
+			"shortName": "bitterHeart",
+			"subclassFeatures": [
+				"Maven of the Bitter Heart|Seeker|driftvvoodSeeker|bitterHeart|driftvvoodSeeker|1",
+				"Spite|Seeker|driftvvoodSeeker|bitterHeart|driftvvoodSeeker|3",
+				"Wild Hatred|Seeker|driftvvoodSeeker|bitterHeart|driftvvoodSeeker|3",
+                "Coven|Seeker|driftvvoodSeeker|bitterHeart|driftvvoodSeeker|10",
+				"Hag's Hold|Seeker|driftvvoodSeeker|bitterHeart|driftvvoodSeeker|14"
+			],
+			"className": "Seeker",
+			"classSource": "driftvvoodSeeker",
+            "additionalSpells": [
+                {
+                    "prepared": {
+                        "1": [
+                            "animal friendship",
+                            "hex"
+                        ],
+                        "3": [
+                            "beast sense",
+                            "blindness/deafness"
+                        ],
+                        "5": [
+                            "bestow curse",
+                            "speak with plants"
+                        ],
+                        "7": [
+                            "charm monster",
+                            "phantasmal killer"
+                        ],
+                        "9": [
+                            "contagion",
+                            "geas"
+                        ]
+                    }
+                }
+            ]
+		},
+        {
+            "name": "Maven of the Brightened Spirit",
+            "source": "driftvvoodSeeker",
+            "page": 7,
+            "shortName": "brightenedSpirit",
+            "subclassFeatures": [
+                "Maven of the Brightened Spirit|Seeker|driftvvoodSeeker|brightenedSpirit|driftvvoodSeeker|1",
+                "Spirit of Holy Light|Seeker|driftvvoodSeeker|brightenedSpirit|driftvvoodSeeker|3",
+                "Blind Faith|Seeker|driftvvoodSeeker|brightenedSpirit|driftvvoodSeeker|3",
+                "Blessed Warmth|Seeker|driftvvoodSeeker|brightenedSpirit|driftvvoodSeeker|10",
+                "Gift of the Martyr|Seeker|driftvvoodSeeker|brightenedSpirit|driftvvoodSeeker|14"
+            ],
+            "className": "Seeker",
+            "classSource": "driftvvoodSeeker",
+            "additionalSpells": [
+                {
+                    "prepared": {
+                        "1": [
+                            "bless",
+                            "healing word"
+                        ],
+                        "3": [
+                            "calm emotions",
+                            "healing spirit"
+                        ],
+                        "5": [
+                            "daylight",
+                            "remove curse",
+                            "revivify"
+                        ],
+                        "7": [
+                            "aura of life",
+                            "guardian of faith"
+                        ],
+                        "9": [
+                            "dawn",
+                            "greater restoration",
+                            "hallow"
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Maven of the Burning Tongue",
+            "source": "driftvvoodSeeker",
+            "page": 7,
+            "shortName": "burningTongue",
+            "subclassFeatures": [
+                "Maven of the Burning Tongue|Seeker|driftvvoodSeeker|burningTongue|driftvvoodSeeker|1",
+                "Blessed Bond|Seeker|driftvvoodSeeker|burningTongue|driftvvoodSeeker|3",
+                "Know Thy Enemy|Seeker|driftvvoodSeeker|burningTongue|driftvvoodSeeker|10",
+                "Holy Hand, Divine Voice|Seeker|driftvvoodSeeker|burningTongue|driftvvoodSeeker|14"
+            ],
+            "className": "Seeker",
+            "classSource": "driftvvoodSeeker",
+            "additionalSpells": [
+                {
+                    "prepared": {
+                        "1": [
+                            "command",
+                            "searing smite"
+                        ],
+                        "3": [
+                            "flameblade",
+                            "zone of truth"
+                        ],
+                        "5": [
+                            "ashardalon's stride",
+                            "tongues"
+                        ],
+                        "7": [
+                            "locate creature",
+                            "wall of fire"
+                        ],
+                        "9": [
+                            "dominate person",
+                            "holy weapon"
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Maven of Collective Dreams",
+            "source": "driftvvoodSeeker",
+            "page": 7,
+            "shortName": "collectiveDreams",
+            "subclassFeatures": [
+                "Maven of Collective Dreams|Seeker|driftvvoodSeeker|collectiveDreams|driftvvoodSeeker|1",
+                "Prophetic Dreams|Seeker|driftvvoodSeeker|collectiveDreams|driftvvoodSeeker|3",
+                "Sweet Repose|Seeker|driftvvoodSeeker|collectiveDreams|driftvvoodSeeker|3",
+                "Lucid Dreamer|Seeker|driftvvoodSeeker|collectiveDreams|driftvvoodSeeker|10",
+                "Sleep Tight|Seeker|driftvvoodSeeker|collectiveDreams|driftvvoodSeeker|10",
+                "Synchronicity and Coincidence|Seeker|driftvvoodSeeker|collectiveDreams|driftvvoodSeeker|14"
+            ],
+            "className": "Seeker",
+            "classSource": "driftvvoodSeeker",
+            "additionalSpells": [
+                {
+                    "prepared": {
+                        "1": [
+                            "minor illusion",
+                            "sanctuary",
+                            "sleep"
+                        ],
+                        "3": [
+                            "mind spike",
+                            "see invisibility"
+                        ],
+                        "5": [
+                            "catnap",
+                            "hypnotic pattern"
+                        ],
+                        "7": [
+                            "divination",
+                            "phantasmal killer"
+                        ],
+                        "9": [
+                            "creation",
+                            "dream"
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Maven of the Last Breath",
+            "source": "driftvvoodSeeker",
+            "page": 7,
+            "shortName": "lastBreath",
+            "subclassFeatures": [
+                "Maven of the Last Breath|Seeker|driftvvoodSeeker|lastBreath|driftvvoodSeeker|1",
+                "Drop Dead|Seeker|driftvvoodSeeker|lastBreath|driftvvoodSeeker|3",
+                "Death Rattle|Seeker|driftvvoodSeeker|lastBreath|driftvvoodSeeker|3",
+                "Breath to the Breathless|Seeker|driftvvoodSeeker|lastBreath|driftvvoodSeeker|10",
+                "Near Death Experience|Seeker|driftvvoodSeeker|lastBreath|driftvvoodSeeker|14",
+                "Raising Spirits|Seeker|driftvvoodSeeker|lastBreath|driftvvoodSeeker|14"
+            ],
+            "className": "Seeker",
+            "classSource": "driftvvoodSeeker",
+            "additionalSpells": [
+                {
+                    "prepared": {
+                        "1": [
+                            "healing word",
+                            "inflict wounds"
+                        ],
+                        "3": [
+                            "silence",
+                            "warding bond"
+                        ],
+                        "5": [
+                            "life transference",
+                            "revivify"
+                        ],
+                        "7": [
+                            "death ward",
+                            "sickening radiance"
+                        ],
+                        "9": [
+                            "dispel evil and good",
+                            "negative energy flood"
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Maven of the Lurking Hand",
+            "source": "driftvvoodSeeker",
+            "page": 7,
+            "shortName": "lurkingHand",
+            "subclassFeatures": [
+                "Maven of the Lurking Hand|Seeker|driftvvoodSeeker|lurkingHand|driftvvoodSeeker|1",
+                "Hard Lurker|Seeker|driftvvoodSeeker|lurkingHand|driftvvoodSeeker|3",
+                "Quickened Hand|Seeker|driftvvoodSeeker|lurkingHand|driftvvoodSeeker|10",
+                "Striking from the Shadows|Seeker|driftvvoodSeeker|lurkingHand|driftvvoodSeeker|14",
+                "Vanish|Seeker|driftvvoodSeeker|lurkingHand|driftvvoodSeeker|14"
+            ],
+            "className": "Seeker",
+            "classSource": "driftvvoodSeeker",
+            "additionalSpells": [
+                {
+                    "prepared": {
+                        "1": [
+                            "fog cloud",
+                            "mage hand",
+                            "wrathful smite"
+                        ],
+                        "3": [
+                            "branding smite",
+                            "pass without trace"
+                        ],
+                        "5": [
+                            "blinding smite",
+                            "nondetection"
+                        ],
+                        "7": [
+                            "greater invisibility",
+                            "staggering smite"
+                        ],
+                        "9": [
+                            "banishing smite",
+                            "passwall"
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Maven of the Mystical Mind",
+            "source": "driftvvoodSeeker",
+            "page": 7,
+            "shortName": "mysticalMind",
+            "subclassFeatures": [
+                "Maven of the Mystical Mind|Seeker|driftvvoodSeeker|mysticalMind|driftvvoodSeeker|1",
+                "Weirding|Seeker|driftvvoodSeeker|mysticalMind|driftvvoodSeeker|3",
+                "Fortune-teller|Seeker|driftvvoodSeeker|mysticalMind|driftvvoodSeeker|3",
+                "Mind Over Matter|Seeker|driftvvoodSeeker|mysticalMind|driftvvoodSeeker|10",
+                "Intuition|Seeker|driftvvoodSeeker|mysticalMind|driftvvoodSeeker|10",
+                "Twist Fate|Seeker|driftvvoodSeeker|mysticalMind|driftvvoodSeeker|14"
+            ],
+            "className": "Seeker",
+            "classSource": "driftvvoodSeeker",
+            "additionalSpells": [
+                {
+                    "prepared": {
+                        "1": [
+                            "catapult",
+                            "unseen servant"
+                        ],
+                        "3": [
+                            "borrowed knowledge",
+                            "detect thoughts"
+                        ],
+                        "5": [
+                            "fly",
+                            "sending",
+                            "tongues"
+                        ],
+                        "7": [
+                            "arcane eye",
+                            "resilient sphere"
+                        ],
+                        "9": [
+                            "telekinesis",
+                            "wall of force"
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+			"name": "Maven of the Roaming Steps",
+			"source": "driftvvoodSeeker",
+			"page": 15,
+			"shortName": "roamingSteps",
+			"subclassFeatures": [
+				"Maven of the Roaming Steps|Seeker|driftvvoodSeeker|roamingSteps|driftvvoodSeeker|1",
+                "Transporter|Seeker|driftvvoodSeeker|roamingSteps|driftvvoodSeeker|3",
+				"Quick Shift|Seeker|driftvvoodSeeker|roamingSteps|driftvvoodSeeker|3",
+				"Master of Movement|Seeker|driftvvoodSeeker|roamingSteps|driftvvoodSeeker|10",
+				"True Traveler|Seeker|driftvvoodSeeker|roamingSteps|driftvvoodSeeker|14"
+			],
+			"className": "Seeker",
+			"classSource": "driftvvoodSeeker",
+            "additionalSpells": [
+                {
+                    "prepared": {
+						"1": [
+							"goodberry",
+                            "longstrider"
+						],
+                        "3": [
+							"find steed",
+                            "misty step",
+                            "spider climb"
+						],
+                        "5": [
+							"fly",
+                            "thunder step|xge"
+						],
+                        "7": [
+							"dimension door",
+                            "polymorph"
+						],
+                        "9": [
+							"far step",
+                            "teleportation circle"
+						]
+					}
+                }
+            ],
+            "foundryImg": "icons/tools/navigation/compass-brass-blue-red.webp"
+		},
+        {
+            "name": "Maven of the Rotting Voice",
+            "source": "driftvvoodSeeker",
+            "page": 7,
+            "shortName": "rottingVoice",
+            "subclassFeatures": [
+                "Maven of the Rotting Voice|Seeker|driftvvoodSeeker|rottingVoice|driftvvoodSeeker|1",
+                "Last Words|Seeker|driftvvoodSeeker|rottingVoice|driftvvoodSeeker|3",
+                "The Right Words|Seeker|driftvvoodSeeker|rottingVoice|driftvvoodSeeker|3",
+                "Turn of Phrase|Seeker|driftvvoodSeeker|rottingVoice|driftvvoodSeeker|10",
+                "Hypnotic Whispers|Seeker|driftvvoodSeeker|rottingVoice|driftvvoodSeeker|14"
+            ],
+            "className": "Seeker",
+            "classSource": "driftvvoodSeeker",
+            "additionalSpells": [
+                {
+                    "prepared": {
+                        "1": [
+                            "charm person",
+                            "dissonant whispers"
+                        ],
+                        "3": [
+                            "gentle repose",
+                            "phantasmal force",
+                            "suggestion"
+                        ],
+                        "5": [
+                            "enemies abound",
+                            "summon undead"
+                        ],
+                        "7": [
+                            "charm monster",
+                            "death ward"
+                        ],
+                        "9": [
+                            "dominate person",
+                            "raise dead"
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Maven of the Shifting Flesh",
+            "source": "driftvvoodSeeker",
+            "page": 7,
+            "shortName": "shiftingFlesh",
+            "subclassFeatures": [
+                "Maven of the Shifting Flesh|Seeker|driftvvoodSeeker|shiftingFlesh|driftvvoodSeeker|1",
+                "Reactive Adaptation|Seeker|driftvvoodSeeker|shiftingFlesh|driftvvoodSeeker|3",
+                "Remarkable Reactions|Seeker|driftvvoodSeeker|shiftingFlesh|driftvvoodSeeker|3",
+                "Hearty and Healthy|Seeker|driftvvoodSeeker|shiftingFlesh|driftvvoodSeeker|10",
+                "Shed Your Shell|Seeker|driftvvoodSeeker|shiftingFlesh|driftvvoodSeeker|14"
+            ],
+            "className": "Seeker",
+            "classSource": "driftvvoodSeeker",
+            "additionalSpells": [
+                {
+                    "prepared": {
+                        "1": [
+                            "absorb elements",
+                            "jump",
+                            "longstrider"
+                        ],
+                        "3": [
+                            "alter self",
+                            "enlarge/reduce"
+                        ],
+                        "5": [
+                            "haste",
+                            "tongues"
+                        ],
+                        "7": [
+                            "freedom of movement",
+                            "polymorph"
+                        ],
+                        "9": [
+                            "greater restoration",
+                            "skill empowerment"
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Maven of the Verdant Pollex",
+            "source": "driftvvoodSeeker",
+            "page": 7,
+            "shortName": "verdantPollex",
+            "subclassFeatures": [
+                "Maven of the Verdant Pollex|Seeker|driftvvoodSeeker|verdantPollex|driftvvoodSeeker|1",
+                "The Land Sees...|Seeker|driftvvoodSeeker|verdantPollex|driftvvoodSeeker|3",
+                "...The Earth Remembers|Seeker|driftvvoodSeeker|verdantPollex|driftvvoodSeeker|3",
+                "Old Growth|Seeker|driftvvoodSeeker|verdantPollex|driftvvoodSeeker|10",
+                "Regrowth|Seeker|driftvvoodSeeker|verdantPollex|driftvvoodSeeker|10",
+                "Bountiful Harvest|Seeker|driftvvoodSeeker|verdantPollex|driftvvoodSeeker|14"
+            ],
+            "className": "Seeker",
+            "classSource": "driftvvoodSeeker",
+            "additionalSpells": [
+                {
+                    "prepared": {
+                        "1": [
+                            "druidcraft",
+                            "entangle",
+                            "goodberry"
+                        ],
+                        "3": [
+                            "barkskin",
+                            "wither and bloom|scc"
+                        ],
+                        "5": [
+                            "plant growth",
+                            "speak with plants"
+                        ],
+                        "7": [
+                            "grasping vine",
+                            "guardian of nature"
+                        ],
+                        "9": [
+                            "tree stride",
+                            "wrath of nature"
+                        ]
+                    }
+                }
+            ]
+        }
+	]
+}
