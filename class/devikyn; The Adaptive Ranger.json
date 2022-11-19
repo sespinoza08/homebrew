@@ -18,8 +18,8 @@
 			}
 		],
 		"dateAdded": 1625065042,
-		"dateLastModified": 1667938661,
-		"_dateLastModifiedHash": "3e3f3b7bdc"
+		"dateLastModified": 1668700856,
+		"_dateLastModifiedHash": "a01552ed11"
 	},
 	"class": [
 		{
@@ -2005,7 +2005,8 @@
 				}
 			],
 			"miscTags": [
-				"HL"
+				"HL",
+				"UBA"
 			]
 		},
 		{
@@ -2115,6 +2116,9 @@
 			],
 			"spellAttack": [
 				"M"
+			],
+			"miscTags": [
+				"UBA"
 			]
 		}
 	],
@@ -2141,7 +2145,6 @@
 			"speed": {
 				"walk": 30,
 				"fly": 30,
-				"canHover": false,
 				"swim": 30
 			},
 			"str": 18,
